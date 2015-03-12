@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------
+.tp-bannershadow.tp-shadow3/*-----------------------------------------------------------------------------
 
 	-	Revolution Slider 1.5.3 -
 
@@ -537,9 +537,9 @@ website:   	http://www.themepunch.com
         -o-user-select: none;
 	}
 
-.tp-bannershadow.tp-shadow1 {	background:url("../assets/shadow1.png") no-repeat; background-size:100%; width:890px; height:60px; bottom:-60px;}
-.tp-bannershadow.tp-shadow2 {	background:url("../assets/shadow2.png") no-repeat; background-size:100%; width:890px; height:60px;bottom:-60px;}
-.tp-bannershadow.tp-shadow3 {	background:url("../assets/shadow3.png") no-repeat; background-size:100%; width:890px; height:60px;bottom:-60px;}
+.tp-bannershadow.tp-shadow1 {	background-size:100%; width:890px; height:60px; bottom:-60px;}
+.tp-bannershadow.tp-shadow2 {	background-size:100%; width:890px; height:60px;bottom:-60px;}
+.tp-bannershadow.tp-shadow3 {	background-size:100%; width:890px; height:60px;bottom:-60px;}
 
 
 /********************************

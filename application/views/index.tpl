@@ -63,10 +63,14 @@
     </div>
 </div>
 
+<section>
+    <div class="container">{include file="filtro.tpl"}</div>
+</section>
+
 <section id="home">
     <div class="container">
 
-        <div class="row introform">
+        {*<div class="row introform">
             <form role="form" class="col-sm-12">
                 <div class="col-md-2 col-md-offset-1">
                     <div class="form-group">
@@ -90,11 +94,11 @@
                         <label for="model2"><strong>Modelo:</strong></label>
                         <select class="form-control" id="model2">
                             <option></option>
-                            {*<option>Boxster</option>
+                            <option>Boxster</option>
                             <option>BMW GF 54</option>
                             <option>FD 2014</option>
                             <option>AMFR</option>
-                            <option>Centra</option>*}
+                            <option>Centra</option>
                         </select>
                     </div>
                 </div>
@@ -139,121 +143,197 @@
                     <button type="submit" id="submit" class="src btn bt-sm red">Pesquisar <i class="icon-search"></i></button>
                 </div>
             </form>
-        </div>
+        </div>*}
 
-        {if $novidades}                
+
+        {if $controle1}
             <div class="row">
                 <div class="col-md-12">
                     <h3 style="margin-top: 0;">Novidades</h3>
                     <div class="grid">
-                        {if $controle1}
-                            <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/{$language}/carros/detalhes/{$novidades->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
-                                <img src="{$novidades->FOTO}" alt="{$novidades->NOME}" title="{$novidades->NOME}">
-                                <p>{$novidades->NOME} <span>R$ {$novidades->PRECO}</span></p>
-                            </div>
-                        {else}
-                            {counter assign=i start=0 print=false} 
-                            {foreach name=outer item=novidade from=$novidades}
-                                <div class="item-grid">
-                                    <div class="ribbon red"><span>Novo</span></div>
-                                    <a class="more" href="/{$language}/carros/detalhes/{$novidade['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
-                                    <img src="{$novidade['FOTO']}" alt="{$novidade['NOME']}" title="{$novidade['NOME']}">
-                                    <p>{$novidade['NOME']} <span>R$ {$novidade['PRECO']}</span></p>
-                                </div>
-                                {counter}
-                            {/foreach}
-                        {/if}
-
+                        <div class="item-grid">
+                            <div class="ribbon red"><span>Novo</span></div>
+                            <a class="more" href="/{$language}/carros/detalhes/{$novidades->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
+                            <img src="{$novidades->FOTO}" alt="{$novidades->NOME}" title="{$novidades->NOME}">
+                            <p>{$novidades->NOME} <span>$ {$novidades->PRECO}</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        {/if}         
-        {if $zeros}
+        {else}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=novidade from=$novidades}
+                {assign "total" $i}
+                {counter}
+            {/foreach}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=novidade from=$novidades}
+                {if $i == 0}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 style="margin-top: 0;">Novidades</h3>
+                            <div class="grid">
+                            {/if}
+                            <div class="item-grid">
+                                <div class="ribbon red"><span>Novo</span></div>
+                                <a class="more" href="/{$language}/carros/detalhes/{$novidade['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
+                                <img src="{$novidade['FOTO']}" alt="{$novidade['NOME']}" title="{$novidade['NOME']}">
+                                <p>{$novidade['NOME']} <span>$ {$novidade['PRECO']}</span></p>
+                            </div>
+                            {if $i == $total}
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {counter}
+            {/foreach}
+        {/if}
+
+
+
+
+        {if $controle2}
             <div class="row">
                 <div class="col-md-12">
                     <h3 style="margin-top: 20px;">Zero KM</h3>
                     <div class="grid">
-                        {if $controle2}
-                            <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/{$language}/carros/detalhes/{$zeros->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
-                                <img src="{$zeros->FOTO}" alt="{$zeros->NOME}" title="{$zeros->NOME}">
-                                <p>{$zeros->NOME} <span>R$ {$zeros->PRECO}</span></p>
-                            </div>
-                        {else}
-                            {counter assign=i start=0 print=false} 
-                            {foreach name=outer item=zero from=$zeros}
-                                <div class="item-grid">
-                                    <div class="ribbon red"><span>Novo</span></div>
-                                    <a class="more" href="/{$language}/carros/detalhes/{$zero['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
-                                    <img src="{$zero['FOTO']}" alt="{$zero['NOME']}" title="{$zero['NOME']}">
-                                    <p>{$zero['NOME']} <span>R$ {$zero['PRECO']}</span></p>
-                                </div>
-                                {counter}
-                            {/foreach}
-                        {/if} 
+                        <div class="item-grid">
+                            <div class="ribbon red"><span>Novo</span></div>
+                            <a class="more" href="/{$language}/carros/detalhes/{$zeros->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
+                            <img src="{$zeros->FOTO}" alt="{$zeros->NOME}" title="{$zeros->NOME}">
+                            <p>{$zeros->NOME} <span>$ {$zeros->PRECO}</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
+        {else}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=zero from=$zeros}
+                {assign var=total value=$i} 
+                {counter}
+            {/foreach}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=zero from=$zeros}
+                {if $i == 0}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 style="margin-top: 20px;">Zero KM</h3>
+                            <div class="grid">
+                            {/if}
+                            <div class="item-grid">
+                                <div class="ribbon red"><span>Novo</span></div>
+                                <a class="more" href="/{$language}/carros/detalhes/{$zero['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
+                                <img src="{$zero['FOTO']}" alt="{$zero['NOME']}" title="{$zero['NOME']}">
+                                <p>{$zero['NOME']} <span>$ {$zero['PRECO']}</span></p>
+                            </div>
+                            {if $i == $total}
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {counter}
+            {/foreach}
         {/if} 
-        {if $seminovos}
+
+
+
+        {if $controle3}
             <div class="row">
                 <div class="col-md-12">
                     <h3 style="margin-top: 20px;">Seminovos</h3>
                     <div class="grid">
-                        {if $controle3}
-                            <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/{$language}/carros/detalhes/{$seminovos->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
-                                <img src="{$seminovos->FOTO}" alt="{$seminovos->NOME}" title="{$seminovos->NOME}">
-                                <p>{$seminovos->NOME} <span>R$ {$seminovos->PRECO}</span></p>
-                            </div>
-                        {else}
-                            {counter assign=i start=0 print=false} 
-                            {foreach name=outer item=seminovo from=$seminovos}
-                                <div class="item-grid">
-                                    <div class="ribbon red"><span>Novo</span></div>
-                                    <a class="more" href="/{$language}/carros/detalhes/{$seminovo['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
-                                    <img src="{$seminovo['FOTO']}" alt="{$zero['NOME']}" title="{$seminovo['NOME']}">
-                                    <p>{$seminovo['NOME']} <span>R$ {$seminovo['PRECO']}</span></p>
-                                </div>
-                                {counter}
-                            {/foreach}
-                        {/if}
+                        <div class="item-grid">
+                            <div class="ribbon red"><span>Novo</span></div>
+                            <a class="more" href="/{$language}/carros/detalhes/{$seminovos->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
+                            <img src="{$seminovos->FOTO}" alt="{$seminovos->NOME}" title="{$seminovos->NOME}">
+                            <p>{$seminovos->NOME} <span>$ {$seminovos->PRECO}</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
+        {else}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=seminovo from=$seminovos}
+                {assign var=total value=$i} 
+                {counter}
+            {/foreach}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=seminovo from=$seminovos}
+                {if $i == 0}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 style="margin-top: 20px;">Seminovos</h3>
+                            <div class="grid">
+                            {/if}
+                            <div class="item-grid">
+                                <div class="ribbon red"><span>Novo</span></div>
+                                <a class="more" href="/{$language}/carros/detalhes/{$seminovo['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
+                                <img src="{$seminovo['FOTO']}" alt="{$zero['NOME']}" title="{$seminovo['NOME']}">
+                                <p>{$seminovo['NOME']} <span>$ {$seminovo['PRECO']}</span></p>
+                            </div>
+                            {if $i == $total}
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {counter}
+            {/foreach}
         {/if}
-        {if $usados}
+
+
+
+        {if $controle4}
             <div class="row">
                 <div class="col-md-12">
                     <h3 style="margin-top: 20px;">Usados</h3>
                     <div class="grid">
-                        {if $controle4}
-                            <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/{$language}/carros/detalhes/{$usados->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
-                                <img src="{$usados->FOTO}" alt="{$usados->NOME}" title="{$usados->NOME}">
-                                <p>{$usados->NOME} <span>R$ {$usados->PRECO}</span></p>
-                            </div>
-                        {else}
-                            {counter assign=i start=0 print=false} 
-                            {foreach name=outer item=usado from=$usados}
-                                <div class="item-grid">
-                                    <div class="ribbon red"><span>Novo</span></div>
-                                    <a class="more" href="/{$language}/carros/detalhes/{$usado['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
-                                    <img src="{$usado['FOTO']}" alt="{$usado['NOME']}" title="{$usado['NOME']}">
-                                    <p>{$usado['NOME']} <span>R$ {$usado['PRECO']}</span></p>
-                                </div>
-                                {counter}
-                            {/foreach}
-                        {/if} 
+                        <div class="item-grid">
+                            <div class="ribbon red"><span>Novo</span></div>
+                            <a class="more" href="/{$language}/carros/detalhes/{$usados->URL_AMIGAVEL}"><i class="icon-plus"></i></a>
+                            <img src="{$usados->FOTO}" alt="{$usados->NOME}" title="{$usados->NOME}">
+                            <p>{$usados->NOME} <span>$ {$usados->PRECO}</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        {/if}     
+        {else}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=usado from=$usados}
+                {assign var=total value=$i} 
+                {counter}
+            {/foreach}
+
+            {counter assign=i start=0 print=false} 
+            {foreach name=outer item=usado from=$usados}
+                {if $i == 0}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 style="margin-top: 20px;">Usados</h3>
+                            <div class="grid">
+                            {/if}
+                            <div class="item-grid">
+                                <div class="ribbon red"><span>Novo</span></div>
+                                <a class="more" href="/{$language}/carros/detalhes/{$usado['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
+                                <img src="{$usado['FOTO']}" alt="{$usado['NOME']}" title="{$usado['NOME']}">
+                                <p>{$usado['NOME']} <span>$ {$usado['PRECO']}</span></p>
+                            </div>
+                            {if $i == $total}
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {counter}
+            {/foreach}
+        {/if} 
+
+
         <!-- testimonials -->
         {*<div class="row testimonials">
         <div class="col-sm-12">
@@ -311,7 +391,7 @@
         <!-- end testimonials -->
 
         <!-- sevices -->
-        <div class="row services">
+        {*<div class="row services">
             <div class="col-sm-12">
                 <h2>Nossos Serviços</h2>
                 <div id="carousel-services" class="carousel slide">
@@ -399,7 +479,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*}
         <!-- end sevices -->
     </div>
 

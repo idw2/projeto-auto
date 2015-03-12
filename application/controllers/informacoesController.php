@@ -57,11 +57,6 @@ Class Informacoes extends Controller {
 
     function financiamento() {
 
-        $model = new HTML_Model();
-        $pagina = "financiamento";
-        $html = $model->get_page($pagina);
-        $conteudo = $html->CONTEUDO;
-
         $this->get_smarty();
         $this->assign("language", LANGUAGE);
         $this->assign("page", "financiamento");

@@ -1,6 +1,7 @@
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav" style="position: relative;top: 13px;">
     <li class="active"><a href="/{$language}/">Home</a></li>
-    <li class="buy" >
+    
+   {* <li class="buy" >
         <a href="/{$language}/">Seminovos</a>
         <div class="menu-buy">
             <span class="arrow"></span>
@@ -85,8 +86,17 @@
             </div>
         </div>
     </li>
-    <li ><a href="/{$language}/">Venda seu carro</a></li>
+    <li ><a href="/{$language}/">Venda seu carro</a></li>*}
     <li><a href="/{$language}/informacoes/financiamento">Financiamento</a></li>
+    <li class="dropdown ">
+        <a href="/{$language}/empresa" class="dropdown-toggle" data-toggle="dropdown">Categorias<i class="icon-down-open-big"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="/{$language}/novidades">Novidades</a></li>
+            <li><a href="/{$language}/zero-km">Zero KM</a></li>
+            <li><a href="/{$language}/seminovos">Seminovos</a></li>
+            <li><a href="/{$language}/usados">Usados</a></li>
+        </ul>
+    </li>
     <li class="dropdown ">
         <a href="/{$language}/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">

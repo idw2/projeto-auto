@@ -42,7 +42,7 @@ address strong {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background: #fff;
+  background: #f2f2f2;
 }
 h1,
 h2,
@@ -202,7 +202,7 @@ header .navbar {
   font-size: 0.9em;
   font-weight: 600;
   margin: 0;
-  min-height: 61px;
+  min-height: 90px;
   text-transform: uppercase;
 }
 .container > .navbar-header, .container > .navbar-collapse {
@@ -596,6 +596,7 @@ header .subbar #carousel-top .carousel-control.next {
   line-height: 14px;
   min-width: 190px;
   padding: 15px;
+  margin-top: 15px !important;
 }
 .btn.alt {
   background: #ebebeb;
@@ -866,13 +867,162 @@ header .subbar #carousel-top .carousel-control.next {
 }
 .tab-content {
   background: #e1e1e1;
-  padding: 5px;
+  padding: 12px;
 }
 .tab-content.alt {
   background: #fff;
   border: 1px solid #ebebeb;
 }
 
+.tab-content .subtitulo {
+  text-align: left;
+}
+.subtitulo {
+  font-size: 2em;
+  color: #777;
+  margin-bottom: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.icr-input, .icr-input[type=text] {
+  width: 100%;
+  display: block;
+  height: 34px !important;
+  padding: 5px 10px;
+  
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #444;
+  background: #fff none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-sizing: border-box;
+}
+
+.icr-btn-redondo.icr-btn-xl {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.icr-btn {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.icr-btn-laranja {
+  color: #FFF !important;
+  background: #FF6701;
+  border: 1px solid #F26522;
+  margin: 0;
+}
+
+.icr-btn-xl {
+  font-size: 2.5em;
+  padding: 10px 30px;
+  line-height: 1.25em;
+}
+
+ul.listahorizontal li {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  padding-right: 5px;
+  clear: none;
+  font-size: 11px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.tab-content .informacoes_busca .modelos_mais_buscados ul.listahorizontal li {
+  border-right: 1px solid;
+  line-height: 0.85em;
+}
+.icr-inline-group .icr-group .icr-checkbox {
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+.tab-content .tab-conteudo .toggle_location .icr-input {
+  width: 382px;
+}
+
+.tab-content .tab-conteudo table.form tr td.input {
+  width: 41%;
+}
+
+.tab-content .tab-conteudo table.form tr td.label {
+  width: 9% !important;
+}
+
+table.form label {
+  margin: 10px 0 15px 0;
+  padding: 0;
+  
+}
+.direita {
+  float: right;
+}
+
+table.form {
+  width: 100%;
+  border: 0;
+}
+
+table.form td {
+  padding: 5px 10px 5px 0;
+  vertical-align: middle;
+}
+
+.tab-container .icr-group, .tab-content .icr-inline-group {
+  margin-bottom: 10px;
+}
+
+.icr-label {
+ 
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #444;
+  line-height: 1.4;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+td.label .icr-label {margin-right: -1.8em;}
+
+.icr-inline-group .icr-group, .icr-inline-group .icr-group .icr-checkbox, .icr-inline-group .icr-group .icr-radio, .icr-inline-group .icr-group .icr-input {
+  display: inline-block;
+}
+
+.icr-radio span, .icr-checkbox span {
+  color: #444;
+  padding-left: 3px;
+}
+.icr-radio input, .icr-checkbox input {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 20px;
+}
+.icr-radio label, .icr-checkbox label {
+  display: inline;
+  font-weight: normal;
+  cursor: pointer;
+}
 
 /******************************** Call to action CTA *******************************/
 .cta {
@@ -1217,6 +1367,7 @@ form .form-control {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+  margin-top: 15px;
 }
 form .input-group-addon {
   background: #f9f9f9;
@@ -1661,6 +1812,17 @@ form .slider-range label {
 .post .post-img:hover .more {
   display: block;
 }
+.info-destaque {font-weight: bold;
+  font-size: 2em;
+  line-height: 1.4em;}
+
+.price {  font-size: 2em;
+          letter-spacing: 1px;
+  color: #b4b4b4;
+font-weight: 400;
+margin-top: 20px;
+  margin-bottom: 30px;}
+
 .post footer {
   height: 34px;
   margin: 20px 0;
@@ -1957,7 +2119,7 @@ aside .row{
   color: #a2a6a9;
 }
 #home .src {
-  margin: 0;
+  margin: 10px 0 0;
 }
 #home .title {
   font-size: 1.3em;
@@ -2396,6 +2558,9 @@ aside .row{
     width: 50%;
 }
 
+.lista_opcionais {list-style: url('../img/checked21.png')}
+.lista_opcionais li {margin-top: 15px; margin-left:20px;}
+
 /*************** helight ************/
 .pricing-tables-helight {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
@@ -2673,4 +2838,21 @@ footer .bottomfoot p span {
 
 .copy a:hover{
     color:#fff;
+}
+
+.seta_separador {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 26px solid #F1F1F1;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 445px;
+}
+
+.sectionbackground {
+  width: 100%;
+  background-color: white;
+  min-width: 1000px;
 }

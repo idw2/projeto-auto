@@ -1877,7 +1877,7 @@ input[type="search"] {
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 0px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
 
@@ -4587,6 +4587,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-right {
     float: right !important;
   }
+}
+
+@media (min-width: 1200px) {
+  .flexslider {
+    margin: 0 0 103px;
+  }
+  
 }
 
 .navbar-form {

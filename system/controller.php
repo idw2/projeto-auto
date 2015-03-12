@@ -349,7 +349,7 @@ class Controller extends My_smarty {
             $string = <<<XML
 $xml  
 XML;
-        }
+        } 
 
         if ($typeReturn == "XML") {
             return simplexml_load_string($string);

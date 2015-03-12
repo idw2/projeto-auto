@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-16 11:35:33
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-12 14:00:40
          compiled from "/home/dlab34/auto.designlab.com.br/application/views/empresa.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:323404150549089854053b7-83679634%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9482613815501fe782b2f84-40031244%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e57c571025059f4931ec87a907abb7446f68c9eb' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/empresa.tpl',
-      1 => 1416239820,
+      1 => 1422884683,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '323404150549089854053b7-83679634',
+  'nocache_hash' => '9482613815501fe782b2f84-40031244',
   'function' => 
   array (
   ),
   'variables' => 
   array (
-    'conteudo' => 0,
+    'institucional' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_549089854ea8a2_69698102',
+  'unifunc' => 'content_5501fe78374d95_95905276',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_549089854ea8a2_69698102')) {function content_549089854ea8a2_69698102($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_5501fe78374d95_95905276')) {function content_5501fe78374d95_95905276($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
 
 
 <div class="container">
@@ -36,7 +36,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <div class="row">
         <div class="col-xs-12">
-            <?php echo $_smarty_tpl->tpl_vars['conteudo']->value;?>
+            <?php echo $_smarty_tpl->tpl_vars['institucional']->value;?>
 
         </div>
     </div>

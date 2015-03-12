@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="/web-files/css/styles.css" />
         <link rel="stylesheet" href="/web-files/css/media-queries.css" />
 
+
         <style>
             header .topbar {
                 background: {$configuracao->COLOR};
@@ -128,19 +129,19 @@
                             <ul id="topsocial">
                                 {if !is_array($configuracao->FACEBOOK)}
                                     <li><a href="{$configuracao->FACEBOOK}" target="_blank"><i class="icon-facebook"></i></a></li>
-                                {/if}
-                                {if !is_array($configuracao->GOOGLE_PLUS)}
+                                        {/if}
+                                        {if !is_array($configuracao->GOOGLE_PLUS)}
                                     <li><a href="{$configuracao->GOOGLE_PLUS}" target="_blank"><i class="icon-gplus"></i></a></li>
-                                {/if}
-                                {if !is_array($configuracao->LINKEDID)}
+                                        {/if}
+                                        {if !is_array($configuracao->LINKEDID)}
                                     <li><a href="{$configuracao->LINKEDID}" target="_blank"><i class="icon-linkedin"></i></a></li>
-                                {/if}
-                                {if !is_array($configuracao->TWITTER)}
+                                        {/if}
+                                        {if !is_array($configuracao->TWITTER)}
                                     <li><a href="{$configuracao->TWITTER}" target="_blank"><i class="icon-twitter"></i></a></li>
-                                {/if}
-                                {if !is_array($configuracao->INSTAGRAM)}
+                                        {/if}
+                                        {if !is_array($configuracao->INSTAGRAM)}
                                     <li><a href="{$configuracao->INSTAGRAM}" target="_blank"><i class="icon-instagram"></i></a></li>
-                                {/if}
+                                        {/if}
                             </ul>
                         </div>
                         {*<div class="col-sm-2 col-md-1">
@@ -173,12 +174,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-{*                        <a class="navbar-brand" href="/{$language}/"><img src="/web-files/img/logo.png" alt="logo image"></a>*}
-                        <a class="navbar-brand" href="/{$language}/"><img src="{if $configuracao->LOGOMARCA == ""}/web-files/img/logo_default.png{else}{$configuracao->LOGOMARCA}{/if}" alt="logo image"></a>
+                        {*                        <a class="navbar-brand" href="/{$language}/"><img src="/web-files/img/logo.png" alt="logo image"></a>*}
+                        <a class="navbar-brand" href="/{$language}/"><img style="width: 85%;" src="{if $configuracao->LOGOMARCA == ""}/web-files/img/logo_default.png{else}{$configuracao->LOGOMARCA}{/if}" alt="logo image"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 3em;">
 
                         {include file="navbar.tpl"}
 
@@ -199,7 +200,7 @@
             <!-- end NavBar -->
 
             <!-- begin Sub Bar -->
-            <div class="subbar" >
+            <div class="subbar" style="display: none">
                 <div class="container">
                     <div id="carousel-top" class="carousel slide">
                         <!-- Wrapper for slides -->

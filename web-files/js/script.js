@@ -35,8 +35,36 @@ $(document).ready(function() {
 
         });
     }
+/******************************  Envio Formulario Proposta  ******************************/
+    if (document.getElementById("btn-send-proposta") != null) {
+        $("#btn-send-proposta").click(function() {
 
+            var site = $("#site").val();
+            var nome = $("#nome").val();
+            var email = $("#email").val();
+            var email_recipiente = $("#email_recipiente").val();
+            var alias = $("#alias").val();
+            var mensagem = $("#mensagem").val();
 
+            $('#visualizar').html('<img src="/web-files/img/Loader.GIF" alt="Enviando..." style="width: 32px;"/> Enviando...');
+
+            $.ajax({
+                type: 'post',
+                data: 'nome=' + nome + '&email=' + email + '&mensagem=' + mensagem + '&site=' + site + '&email_recipiente=' + email_recipiente + '&alias=' + alias,
+                url: '/pt/carros/detalhes',
+                success: function(data) {
+                    if (data['erro'] != "") {
+                        $("#visualizar").html(data['erro']);
+                    } else {
+                        $("#visualizar").html(data['success']);
+                        return false;
+                    }
+
+                }
+            });
+
+        });
+    }
 
     /******************************  Placeholder  ******************************/
     Placeholder.init();
@@ -276,7 +304,7 @@ $(function() {
             controlNav: false,
             animationLoop: false,
             slideshow: false,
-            itemWidth: 210,
+            itemWidth: 150,
             itemMargin: 5,
             asNavFor: '.veiculo-slider'
         });

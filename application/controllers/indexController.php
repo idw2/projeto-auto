@@ -17,6 +17,9 @@ Class Index extends Controller {
         $this->assign("page", "index");
         $this->assign("abas", "novidades");
         
+        
+        //echo $this->convertReturnWS_base64($this->getWsservidor("thiago", "Apenas teste Thiago"), "STRING"); die();
+        
         /*
          * 
          * CHAMADA NO WEBSERVICE OS ULTIMOS VEICULOS CATEGORIZADOS COMO NOVIDADE 
@@ -69,7 +72,7 @@ Class Index extends Controller {
         
         if ($zeros) {
             foreach( $zeros as $objs ){
-                ( sizeof($objs) == 1 ) ? $controle1 = TRUE : $controle1 = FALSE ;
+                ( sizeof($objs) == 1 ) ? $controle2 = TRUE : $controle2 = FALSE ;
             }
             
             $this->assign("controle2", $controle2);
@@ -95,9 +98,11 @@ Class Index extends Controller {
         
         $seminovos = $this->convertReturnWS_base64($this->getWsservidor("getList_veiculos", base64_encode($dadosXML)), "OBJECT");
         
+       
+        
         if ($seminovos) {
             foreach( $seminovos as $objs ){
-                ( sizeof($objs) == 1 ) ? $controle1 = TRUE : $controle1 = FALSE ;
+                ( sizeof($objs) == 1 ) ? $controle3 = TRUE : $controle3 = FALSE ;
             }
             
             $this->assign("controle3", $controle3);
@@ -126,7 +131,7 @@ Class Index extends Controller {
         
         if ($usados) {
             foreach( $usados as $objs ){
-                ( sizeof($objs) == 1 ) ? $controle1 = TRUE : $controle1 = FALSE ;
+                ( sizeof($objs) == 1 ) ? $controle4 = TRUE : $controle4 = FALSE ;
             }
             
             $this->assign("controle4", $controle4);

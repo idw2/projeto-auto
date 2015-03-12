@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-12-16 11:35:33
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-12 14:01:17
          compiled from "/home/dlab34/auto.designlab.com.br/application/views/navbar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:84434776554908985546593-82042736%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6029834395501fe9da14d74-82759429%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'db308b1edfd773cfd096ea777abda4e55df7772e' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/navbar.tpl',
-      1 => 1416242368,
+      1 => 1425761591,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '84434776554908985546593-82042736',
+  'nocache_hash' => '6029834395501fe9da14d74-82759429',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_54908985585096_88929503',
+  'unifunc' => 'content_5501fe9da55061_27286620',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54908985585096_88929503')) {function content_54908985585096_88929503($_smarty_tpl) {?><ul class="nav navbar-nav">
+<?php if ($_valid && !is_callable('content_5501fe9da55061_27286620')) {function content_5501fe9da55061_27286620($_smarty_tpl) {?><ul class="nav navbar-nav" style="position: relative;top: 13px;">
     <li class="active"><a href="/<?php echo $_smarty_tpl->tpl_vars['language']->value;?>
 /">Home</a></li>
     <li class="buy" >
@@ -118,14 +118,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 /informacoes/financiamento">Financiamento</a></li>
     <li class="dropdown ">
         <a href="/<?php echo $_smarty_tpl->tpl_vars['language']->value;?>
-/informacoes/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
+/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
             <li><a href="/<?php echo $_smarty_tpl->tpl_vars['language']->value;?>
-/informacoes/empresa">A Empresa</a></li>
+/empresa">A Empresa</a></li>
             <li><a href="/<?php echo $_smarty_tpl->tpl_vars['language']->value;?>
-/informacoes/onde-estamos">Onde estamos</a></li>
+/onde-estamos">Onde estamos</a></li>
             <li><a href="/<?php echo $_smarty_tpl->tpl_vars['language']->value;?>
-/informacoes/contato">Contato</a></li>
+/contato">Contato</a></li>
         </ul>
     </li>
 

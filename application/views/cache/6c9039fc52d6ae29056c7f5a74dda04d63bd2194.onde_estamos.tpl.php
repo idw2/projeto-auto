@@ -1,46 +1,51 @@
-<?php /*%%SmartyHeaderCode:1159214715546a261ff1bae3-44749664%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:130352366755019ac65455f5-26939278%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6c9039fc52d6ae29056c7f5a74dda04d63bd2194' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/onde_estamos.tpl',
-      1 => 1416240724,
+      1 => 1426089973,
       2 => 'file',
     ),
     '500fcddbb3138c5958db2eeec67f5e3c58c3871b' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/header.tpl',
-      1 => 1416242419,
+      1 => 1426095475,
       2 => 'file',
     ),
     'db308b1edfd773cfd096ea777abda4e55df7772e' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/navbar.tpl',
-      1 => 1416242368,
+      1 => 1425761591,
       2 => 'file',
     ),
     '8350abd1f4a65fbcad0819e9ba6f7681a0a08058' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/footer.tpl',
-      1 => 1416242677,
+      1 => 1426095463,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1159214715546a261ff1bae3-44749664',
+  'nocache_hash' => '130352366755019ac65455f5-26939278',
+  'variables' => 
+  array (
+    'endereco' => 0,
+    'onde_estamos' => 0,
+  ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_546a262016c7d2_41689785',
+  'unifunc' => 'content_55019ac6b2c246_28590145',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_546a262016c7d2_41689785')) {function content_546a262016c7d2_41689785($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_55019ac6b2c246_28590145')) {function content_55019ac6b2c246_28590145($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <!-- Define Charset -->
         <meta charset="utf-8">
 
         <!-- Page Title -->
-        <title>Minha Concessionária | Onde Estamos</title>
+        <title>Lunixx Auto Sales - Minha Concessionária | Onde Estamos</title>
 
         <!-- Responsive Metatag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -49,6 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <link rel="stylesheet" href="/web-files/css/bootstrap.css"/>
 
         <!-- Slider Revolution -->
+        <link rel="stylesheet" href="/web-files/js/woothemes-FlexSlider-ce5441b/flexslider.css">
         <link rel="stylesheet" href="/web-files/plugins/revolution/css/settings.css">
 
         <!-- Font icons -->
@@ -57,6 +63,78 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <link rel="stylesheet" href="css/fontello-ie7.css" ><![endif]-->
         <link rel="stylesheet" href="/web-files/css/styles.css" />
         <link rel="stylesheet" href="/web-files/css/media-queries.css" />
+
+
+        <style>
+            header .topbar {
+                background: #f17241;
+            }
+            footer .middlefoot ul li i {
+                color: #f17241;
+            }
+            footer h2 {
+                border-left: 1px dotted #f17241;
+            }
+            h2 {
+                border-left: 3px double #f17241;
+            }
+            header .subbar #carousel-top .offer span strong {
+                color: #f17241;
+            }
+            header .navbar .navbar-nav li.active a, header .navbar .navbar-nav li a:hover {
+                color: #f17241;
+            }
+            header .navbar .navbar-form .form-group .input-group-btn .btn {
+                color: #f17241;
+            }
+            a {
+                color: #f17241;
+            }
+            header .subbar #carousel-top .offer:hover span {
+                background: #f17241;
+            }
+            header .subbar #carousel-top .offer:hover {
+                background: #f17241;
+            }
+            .dropdown ul li a:hover {
+                background: #f17241!important;
+            }
+            .btn.red {
+                background: #f17241;
+                border-color: #f17241;
+            }
+            .bannercontainer .caption p>span {
+                background: #f17241;
+            }
+            .grid .item-grid .ribbon.red {
+                border-top-color: #f17241;
+                border-right-color: #f17241;
+            }
+            .bannercontainer .caption p>span>span {
+                border: 30px solid #f17241;
+                border-bottom-color: transparent;
+                border-right-color: transparent;
+                border-top-color: transparent;
+            }
+            footer .middlefoot .recent-news:hover a {
+                color: #f17241;
+            }
+            footer .middlefoot .recent-news:hover div .post-icon {
+                background: #f17241;
+            }
+            #carousel-services .services-item .ico {
+                border: 5px solid #f17241;
+                color: #f17241;
+            }
+            #carousel-services .services-item:hover .ico {
+                -webkit-box-shadow: 0 0 0 7px #f17241;
+                box-shadow: 0 0 0 7px #f17241;
+            }
+            footer .middlefoot ul li a:hover {
+                color: #f17241;
+            }
+        </style>
+
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -79,21 +157,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <div class="row">
                         <div class="col-sm-8 col-md-8">
                             <ul id="topmenu">
-                                <li><a href="/pt/informacoes/empresa">Sobre</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                                <li><a href="/pt/informacoes/contato">Contato</a></li>
-                                <li><a href="/pt/informacoes/onde-estamos">Onde estamos</a></li>
-                                <li><a href="tel:+550000000">Ligue: (00) 0000 0000</a></li>
+                                
+                                <li><a href="tel:+55+13212522323">Ligue: +1 (321) 252-2323</a></li>
                             </ul>
                             <div class="clearfix"></div>
                         </div>
                         <div class="col-sm-4 col-md-4">
-                                <ul id="topsocial">
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-gplus"></i></a></li>
-                                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                </ul>
+                            <ul id="topsocial">
+                                                                    <li><a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
+                                                                                                                    <li><a href="https://plus.google.com" target="_blank"><i class="icon-gplus"></i></a></li>
+                                                                                                                    <li><a href="https://www.linkedin.com" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                                                                                                    <li><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
+                                                                                                                    <li><a href="http://instagram.com/" target="_blank"><i class="icon-instagram"></i></a></li>
+                                                                    </ul>
                         </div>
                         
                     </div>
@@ -114,16 +190,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/pt/"><img src="/web-files/img/logo.png" alt="logo image"></a>
+                        
+                        <a class="navbar-brand" href="/en/"><img style="width: 85%;" src="http://motors.designlab.com.br/web-files/logomarcas/6FCD3B9535C665B254D0C694E13E4300.png" alt="logo image"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        
-                        <ul class="nav navbar-nav">
-    <li class="active"><a href="/pt/">Home</a></li>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 3em;">
+
+                        <ul class="nav navbar-nav" style="position: relative;top: 13px;">
+    <li class="active"><a href="/en/">Home</a></li>
     <li class="buy" >
-        <a href="/pt/">Seminovos</a>
+        <a href="/en/">Seminovos</a>
         <div class="menu-buy">
             <span class="arrow"></span>
             <button class="btn btn-sm red">Ver todos</button>
@@ -207,19 +284,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
         </div>
     </li>
-    <li ><a href="/pt/">Venda seu carro</a></li>
-    <li><a href="/pt/informacoes/financiamento">Financiamento</a></li>
+    <li ><a href="/en/">Venda seu carro</a></li>
+    <li><a href="/en/informacoes/financiamento">Financiamento</a></li>
     <li class="dropdown ">
-        <a href="/pt/informacoes/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
+        <a href="/en/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
-            <li><a href="/pt/informacoes/empresa">A Empresa</a></li>
-            <li><a href="/pt/informacoes/onde-estamos">Onde estamos</a></li>
-            <li><a href="/pt/informacoes/contato">Contato</a></li>
+            <li><a href="/en/empresa">A Empresa</a></li>
+            <li><a href="/en/onde-estamos">Onde estamos</a></li>
+            <li><a href="/en/contato">Contato</a></li>
         </ul>
     </li>
 
 </ul>
-                        
+
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group">
                                 <div class="input-group">
@@ -229,7 +306,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     </span>
                                 </div>
                             </div>
-
+                            
                         </form>
                     </div><!-- /.navbar-collapse -->
                 </div>
@@ -237,7 +314,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <!-- end NavBar -->
 
             <!-- begin Sub Bar -->
-            <div class="subbar" >
+            <div class="subbar" style="display: none">
                 <div class="container">
                     <div id="carousel-top" class="carousel slide">
                         <!-- Wrapper for slides -->
@@ -315,7 +392,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
             <!-- end Sub Bar -->
 
-            
+
 
         </header>
         <!-- End header -->
@@ -332,11 +409,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <div class="row">
         <div class="col-xs-12">
+            <div class="col-xs-4">
+
+            <p style='font-size: 0.9em;'><strong>Endereço:</strong><br />
+                Estrada São Mateus, 111 
+                <br>
+            Jardim Primavera - Duque de Caxias/RJ <br> CEP: 25215-283</p>
+               </div>
+            <div class="col-xs-8">
             <div class="map-frame" style="margin-bottom: 18px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6483771495173!2d-43.34415719999997!3d-22.9999541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda1479204d73%3A0x34fcf27752ef5f0!2sAv.+das+Am%C3%A9ricas%2C+36+-+Barra+da+Tijuca%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1416240697986" width="600" height="450" frameborder="0" style="border:0;width: 100%;"></iframe>
+                <iframe src="https://maps.google.com/maps?q=Cristo+Redentor&output=embed" width="600" height="450" frameborder="0" style="border:0;width: 100%;"></iframe>
             </div>
-            <p><strong>Endereço:</strong><br />
-            Av. das Américas, 2000</p>
+            </div>
+                
+                
         </div>
     </div>
 
@@ -358,45 +444,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
 
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-2 about">
+                        <div class="col-xs-12 col-sm-6 col-md-3 about">
                             <h2>Contato</h2>
-                            <p>Ligue: (00) 0000 0000</p>
-                            <p>Av. das Américas, 200<br />
-                            Rio de Janeiro - RJ<br />
-                            CEP: 00000-000</p>
-                            <a href="#">Ver mapa</a>
+                            <p>Ligue: +1 (321) 252-2323</p>
+                            <p>Estrada São Mateus, 111<br>
+                                
+                            Jardim Primavera<br />
+                            Duque de Caxias/RJ<br />
+                            CEP: 25215-283</p>
+
                         </div>
+
+                        
 
                         <div class="col-xs-12 col-sm-6 col-md-3">
-                            <h2>Últimas Notícias</h2>
-
-                            <div class="recent-news">
-                                <div>
-                                    <div class="post-icon"><i class="icon-pencil"></i></div>
-                                    <img src="/web-files/img/footer-thumbnail-news/recent1.jpg" alt="//" />
-                                </div>
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-                                <span>Mai 12, 2014 por Editor</span>
-                            </div>
-                            <div class="recent-news">
-                                <div>
-                                    <div class="post-icon"><i class="icon-pencil"></i></div>
-                                    <img src="/web-files/img/footer-thumbnail-news/recent2.jpg" alt="//" />
-                                </div>
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-                                <span>Mai 12, 2014 por Editor</span>
-                            </div>
-                            <div class="recent-news">
-                                <div>
-                                    <div class="post-icon"><i class="icon-pencil"></i></div>
-                                    <img src="/web-files/img/footer-thumbnail-news/recent3.jpg" alt="//" />
-                                </div>
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-                                <span>Mai 12, 2014 por Editor</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-2">
                             <h2>Veículos</h2>
                             <ul>
                                 <li><i class="icon-plus"></i><a href="#">Populares</a></li>
@@ -407,7 +468,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             </ul>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 col-md-2">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
                             <h2>Serviços</h2>
                             <ul>
                                 <li><i class="icon-plus"></i><a href="#">Semi novos</a></li>
@@ -418,11 +479,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <h2>Horário de funcionamento</h2>
                             <ul class="hours">
-                                <li><span class="icon"><i class="icon-clock"></i></span>Segunda<span class="pull-right">06.00 - 22.00</span></li>
-                                <li><span class="icon"><i class="icon-clock"></i></span>Terça<span class="pull-right">06.00 - 22.00</span></li>
-                                <li><span class="icon"><i class="icon-clock"></i></span>Quarta<span class="pull-right">06.00 - 22.00</span></li>
-                                <li><span class="icon"><i class="icon-clock"></i></span>Quinta<span class="pull-right">06.00 - 22.00</span></li>
-                                <li><span class="icon"><i class="icon-clock"></i></span>Sexta<span class="pull-right">06.00 - 21.00</span></li>
+                                
+                                
+                                <li><span class="icon"><i class="icon-clock"></i></span>De Segunda à Sexta<span class="pull-right">08:00 - 19:00</span></li>
+                                <li><span class="icon"><i class="icon-clock"></i></span>Sábados<span class="pull-right">09:00 - 18:00</span></li>
+                                <li><span class="icon"><i class="icon-clock"></i></span>Domingos<span class="pull-right">09:00 - 13:00</span></li>
+                                <li><span class="icon"><i class="icon-clock"></i></span>Feriados<span class="pull-right">09:00 - 14:00</span></li>
                             </ul>
                         </div>
                     </div>
@@ -443,11 +505,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 
-                                <li><a href="#" class="gplus"><i class="icon-gplus"></i></a></li>
-                                <li><a href="#" class="linkedin"><i class="icon-linkedin"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                                <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                            </ul>
+                                
+                                                                    <li><a href="https://plus.google.com" target="_blank" class="gplus"><i class="icon-gplus"></i></a></li>
+                                                                                                    <li><a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="icon-linkedin"></i></a></li>
+                                                                                                    <li><a href="https://twitter.com" target="_blank" class="twitter"><i class="icon-twitter"></i></a></li>
+                                                                                                    <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+                                                                                                    <li><a href="http://instagram.com/" target="_blank" class="instagram"><i class="icon-instagram"></i></a></li>
+                                                            </ul>
                         </div>
                     </div>
                 </div>
@@ -459,9 +523,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <!-- Javascript Files -->
 
         <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write("<script src=\"/web-files/js/jquery-1.9.1.min.js\"")</script>
 
+
+
+        <script src="/web-files/js/jquery-2.1.1.min.js"></script>
         <!-- Respond.js media queries for IE8 -->
         <script src="/web-files/js/respond.min.js"></script>
 
@@ -469,7 +534,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <script src="/web-files/js/bootstrap.min.js" ></script>
 
         <!-- Retina.js -->
-        <script src="/web-files/js/retina.js" ></script>
+
 
         <!-- Placeholder.js http://widgetulous.com/placeholderjs/ -->
         <script src="/web-files/js/placeholder.js" ></script>
@@ -480,11 +545,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <!-- Slider Revolution -->
         <script src="/web-files/plugins/revolution/js/jquery.themepunch.plugins.min.js"></script>
         <script src="/web-files/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        
+        <!-- Slider -->
+        <script src="/web-files/js/woothemes-FlexSlider-ce5441b/jquery.flexslider-min.js"></script>
 
         <!-- Custom -->
-        <script src="/web-files/js/script.js"  ></script>
+        <script src="/web-files/js/script.js"></script>
 
         <!-- End Javascript Files -->
+        
+       
 
 
     </body>
