@@ -274,7 +274,7 @@
                             <div class="item-grid">
                                 <div class="ribbon red"><span>Novo</span></div>
                                 <a class="more" href="/{$language}/carros/detalhes/{$seminovo['URL_AMIGAVEL']}"><i class="icon-plus"></i></a>
-                                <img src="{$seminovo['FOTO']}" alt="{$seminovo['NOME']}" title="{$seminovo['NOME']}">
+                                <img src="{$seminovo['FOTO']}" alt="{$zero['NOME']}" title="{$seminovo['NOME']}">
                                 <p>{$seminovo['NOME']} <span>$ {$seminovo['PRECO']}</span></p>
                             </div>
                             {if $i == $total}
@@ -284,7 +284,7 @@
                 {/if}
                 {counter}
             {/foreach}
-        {/if} 
+        {/if}
 
 
 

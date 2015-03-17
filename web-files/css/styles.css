@@ -12,7 +12,12 @@
 /* Fancybox */
 @import url("jquery.fancybox.css");
 
+@import url(http://weloveiconfonts.com/api/?family=iconicstroke);
 
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+}
 
 /************************* General Styles for Tags *************************/
 a {
@@ -867,7 +872,8 @@ header .subbar #carousel-top .carousel-control.next {
 }
 .tab-content {
   background: #e1e1e1;
-  padding: 12px;
+  padding: 20px 60px;
+  max-height: 352px;
 }
 .tab-content.alt {
   background: #fff;
@@ -875,7 +881,13 @@ header .subbar #carousel-top .carousel-control.next {
 }
 
 .tab-content .subtitulo {
-  text-align: left;
+  text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    font-weight: 300;
+    color:#4a4a4a; 
+    margin-bottom: -10px; 
+    
 }
 .subtitulo {
   font-size: 2em;
@@ -886,7 +898,7 @@ header .subbar #carousel-top .carousel-control.next {
 }
 
 .icr-input, .icr-input[type=text] {
-  width: 100%;
+  width: 90%;
   display: block;
   height: 34px !important;
   padding: 5px 10px;
@@ -904,11 +916,11 @@ header .subbar #carousel-top .carousel-control.next {
   box-sizing: border-box;
 }
 
-.icr-btn-redondo.icr-btn-xl {
+/*.icr-btn-redondo.icr-btn-xl {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-}
+}*/
 
 .icr-btn {
   width: 100%;
@@ -932,9 +944,9 @@ header .subbar #carousel-top .carousel-control.next {
 }
 
 .icr-btn-xl {
-  font-size: 2.5em;
+  font-size: 1.3em;
   padding: 10px 30px;
-  line-height: 1.25em;
+  line-height: 0.8em;
 }
 
 ul.listahorizontal li {
@@ -960,6 +972,7 @@ ul.listahorizontal li {
 .tab-content .tab-conteudo .toggle_location .icr-input {
   width: 382px;
 }
+.toggle_location {margin: 25px 0 0 6em;}
 
 .tab-content .tab-conteudo table.form tr td.input {
   width: 41%;
@@ -976,6 +989,13 @@ table.form label {
 }
 .direita {
   float: right;
+  margin-right: 2.2em;
+}
+.direita2 {
+  float: right;
+  margin-right: 3em;
+  margin-top: -45px;
+  width:185px;
 }
 
 table.form {
@@ -994,7 +1014,7 @@ table.form td {
 
 .icr-label {
  
-  font-weight: 700;
+  
   font-size: 1.3em;
   color: #444;
   line-height: 1.4;
@@ -1003,11 +1023,18 @@ table.form td {
   margin-bottom: 10px;
 }
 
-td.label .icr-label {margin-right: -1.8em;}
+#marcaComprar {width: 90%!important}
+#anomodeloinicial{width: 195px !important}
+#anomodelofinal{width: 181px !important}
+#precominimo{width: 181px !important}
+#precomaximo{width: 181px !important}
+
+/*td.label .icr-label {margin-right: -1.8em;}*/
 
 .icr-inline-group .icr-group, .icr-inline-group .icr-group .icr-checkbox, .icr-inline-group .icr-group .icr-radio, .icr-inline-group .icr-group .icr-input {
   display: inline-block;
 }
+
 
 .icr-radio span, .icr-checkbox span {
   color: #444;

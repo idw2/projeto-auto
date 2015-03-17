@@ -6,11 +6,11 @@
     </head>
     <body>
         <pre style="font-size: 20px;">
-            <p><b>Nome:</b> {$view_nome}</p>
             <p><b>Email:</b> {$view_email}</p>
-            <p><b>Telefone:</b> {$telefone}</p>
-            <p><b>Assunto:</b> {$view_assunto}</p>
-            <p><b>Mensagem:</b><br/>{$view_mensagem}</p>
+            <p><b>Fabricante:</b> {$view_fabricante}</p>
+            <p><b>Modelo:</b><br/>{$view_modelo}</p>
+            <p><b>Ano/Versão:</b><br/>{$view_ano} / {$view_versao}</p>
+            <p><b>Modelo:</b><br/>{$view_modelo}</p>
         </pre>
     </body>
 </html>

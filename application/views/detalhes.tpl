@@ -68,7 +68,10 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h2 class="price">R${$carro->PRECO}</h2>
-                    <form class="ajax-form" action="" method="post">
+                    <form class="ajax-form" action="" method="post">                  
+                        <input type="hidden"id="site" name="site" maxlength="40" value="{$site}"/>
+                        <input type="hidden"id="email_recipiente" name="email_recipiente" maxlength="40" value="{$configuracao->EMAIL_FALECONOSCO}"/>
+                        <input type="hidden"id="alias" name="alias" maxlength="40" value="{if !is_array($configuracao->ALIAS)}{$configuracao->ALIAS}{/if}"/>
                         <div class="form-row">
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
                         </div>
@@ -155,7 +158,7 @@
 </section>
 
 <script>
-    $('#myTab a').click(function(e) {
+    $('#myTab a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
         $('#myTab a[href="#profile"]').tab('show') // Select tab by name

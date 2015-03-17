@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     /******************************  Envio Formulario Contato  ******************************/
 
     if (document.getElementById("btn-send-contato") != null) {
-        $("#btn-send-contato").click(function() {
+        $("#btn-send-contato").click(function () {
 
             var site = $("#site").val();
             var nome = $("#nome").val();
@@ -19,7 +19,7 @@ $(document).ready(function() {
                 type: 'post',
                 data: 'nome=' + nome + '&email=' + email + '&assunto=' + assunto + '&mensagem=' + mensagem + '&site=' + site + '&email_recipiente=' + email_recipiente + '&alias=' + alias,
                 url: '/pt/contato',
-                success: function(data) {
+                success: function (data) {
                     if (data['erro'] != "") {
                         $("#visualizar").html(data['erro']);
                     } else {
@@ -35,9 +35,9 @@ $(document).ready(function() {
 
         });
     }
-/******************************  Envio Formulario Proposta  ******************************/
+    /******************************  Envio Formulario Proposta  ******************************/
     if (document.getElementById("btn-send-proposta") != null) {
-        $("#btn-send-proposta").click(function() {
+        $("#btn-send-proposta").click(function () {
 
             var site = $("#site").val();
             var nome = $("#nome").val();
@@ -52,7 +52,7 @@ $(document).ready(function() {
                 type: 'post',
                 data: 'nome=' + nome + '&email=' + email + '&mensagem=' + mensagem + '&site=' + site + '&email_recipiente=' + email_recipiente + '&alias=' + alias,
                 url: '/pt/carros/detalhes',
-                success: function(data) {
+                success: function (data) {
                     if (data['erro'] != "") {
                         $("#visualizar").html(data['erro']);
                     } else {
@@ -65,7 +65,40 @@ $(document).ready(function() {
 
         });
     }
+    /******************************  Envio Formulario Venda  ******************************/
 
+    if (document.getElementById("btn-send-vender") != null) {
+        $("#btn-send-vender").click(function () {
+
+            var site = $("#site").val();
+            var fabricante = $("#fabricante").val();
+            var modelo = $("#modelo").val();
+            var ano = $("#ano").val();
+            var email = $("#email").val();
+            var email_recipiente = $("#email_recipiente").val();
+
+            $('#msg-vender').html('<img src="/web-files/img/Loader.GIF" alt="Enviando..." style="width: 32px;"/> Enviando...');
+
+            $.ajax({
+                type: 'post',
+                data: 'fabricante=' + fabricante + '&modelo=' + modelo + '&ano=' + ano + '&email=' + email + '&site=' + site + '&email_recipiente=' + email_recipiente,
+                url: '/pt/carros/vender',
+                success: function (data) {
+                    if (data['erro'] != "") {
+                        $("#msg-vender").html(data['erro']);
+                    } else {
+                        $("#msg-vender").html(data['success']);
+                        $("#fabricante").val("");
+                        $("#email").val("");
+                        $("#modelo").val("");
+                        $("#ano").val("");
+                    }
+
+                }
+            });
+
+        });
+    }
     /******************************  Placeholder  ******************************/
     Placeholder.init();
 
@@ -151,12 +184,12 @@ $(document).ready(function() {
 
     /*****************************  Accordion  *********************************/
     if ($('#accordion').length) {
-        $('#accordion').on('hide.bs.collapse', function(element) {
+        $('#accordion').on('hide.bs.collapse', function (element) {
             $(element.target).prev().find('i').removeClass('icon-minus');
             $(element.target).prev().find('i').addClass('icon-plus');
         });
 
-        $('#accordion').on('show.bs.collapse', function(element) {
+        $('#accordion').on('show.bs.collapse', function (element) {
             $(element.target).prev().find('i').removeClass('icon-plus');
             $(element.target).prev().find('i').addClass('icon-minus');
         });
@@ -188,14 +221,14 @@ $(document).ready(function() {
 
     /*********************************  Tabs  **********************************/
     if ($('#tab-car').length) {
-        $('#tab-car a').click(function(e) {
+        $('#tab-car a').click(function (e) {
             e.preventDefault()
             $(this).tab('show')
         })
     }
 
     if ($('#tab-car2').length) {
-        $('#tab-car2 a').click(function(e) {
+        $('#tab-car2 a').click(function (e) {
             e.preventDefault()
             $(this).tab('show')
         })
@@ -208,7 +241,7 @@ $(document).ready(function() {
 
     if ($(".fancybox").length) {
 
-        $(".fancybox").each(function() {
+        $(".fancybox").each(function () {
             $(this).attr('rel', $(this).data('rel'));
         });
 
@@ -223,7 +256,7 @@ $(document).ready(function() {
     /*******************************  Menu Buy  ********************************/
     if ($(".menu-buy").length) {
 
-        $('.menu-buy .items a').hover(function(e) {
+        $('.menu-buy .items a').hover(function (e) {
             $('.menu-buy .car').find('img').attr('src', $(this).data('img'));
             $('.menu-buy .car').find('strong').html($(this).data('title'));
             $('.menu-buy .car').find('span').html($(this).data('desc'));
@@ -234,7 +267,7 @@ $(document).ready(function() {
 
     /*******************************  Go to top  *******************************/
     if ($("#go-top").length) {
-        $('#go-top').click(function(e) {
+        $('#go-top').click(function (e) {
             e.preventDefault()
             $(window).scrollTo(0, 800);
         });
@@ -244,7 +277,7 @@ $(document).ready(function() {
 
     /****************************  Select Car Model  ***************************/
     if ($("#carousel-car-model").length) {
-        $('#carousel-car-model a').click(function(e) {
+        $('#carousel-car-model a').click(function (e) {
             e.preventDefault()
             $('#carousel-car-model a').removeClass('active')
             $(this).addClass('active')
@@ -279,7 +312,7 @@ function initSliderRange(element, pre, app, min, max, step, val, tooltip) {
         step: step,
         tooltip: tooltip,
     })
-            .on('slide', function(ev) {
+            .on('slide', function (ev) {
                 $(this).parent().parent().find('.input_range.min').val(ev.value[0])
                 $(this).parent().parent().find('.span_range.min').html(pre + ev.value[0] + app)
 
@@ -289,7 +322,7 @@ function initSliderRange(element, pre, app, min, max, step, val, tooltip) {
 }
 
 
-$(function() {
+$(function () {
     if ($('.veiculo-slider').hasClass('veiculo-slider')) {
         $('.veiculo-slider').flexslider({
             animation: "slide",
@@ -304,12 +337,12 @@ $(function() {
             controlNav: false,
             animationLoop: false,
             slideshow: false,
-            itemWidth: 150,
+            itemWidth: 210,
             itemMargin: 5,
             asNavFor: '.veiculo-slider'
         });
 
-        $('img').error(function() {
+        $('img').error(function () {
             this.src = 'http://placehold.it/320x240';
         });
 

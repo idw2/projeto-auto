@@ -28,22 +28,20 @@ class System {
 
     private function setSeparator() {
         $separator = explode("/", $this->_url);
-        
+
         $error = trim(str_replace("index/index_action/", "", $_GET["url"]));
-        
-        if( $separator[1] == "empresa" || $separator[1] == "contato" || $separator[1] == "onde-estamos" || $separator[1] == "financiamento"){
+
+        if ($separator[1] == "empresa" || $separator[1] == "contato" || $separator[1] == "onde-estamos") {
             $separator[2] = $separator[1];
             $separator[1] = "informacoes";
-        } else if( $error == "404" || $error == "403"){
+        } else if ($error == "404" || $error == "403") {
             $separator[2] = "error_{$error}";
             $separator[1] = "error";
-        } else if( $separator[1] == "novidades" || $separator[1] == "zero-km" || $separator[1] == "seminovos" || $separator[1] == "usados"){
-            $separator[2] = $separator[1];
-            $separator[1] = "categorias";
-        } else if( $separator[1] == "carros" ){
-            $separator[2] = "detalhes";
         }
-        
+//        else if( $separator[1] == "carros" ){
+//            $separator[2] = "detalhes";
+//        }
+
         $this->controller = $separator[1];
         $this->action = ( $separator[2] == null || $separator[2] == "index" ) ? $separator[2] = "index_action" : $separator[2];
     }
