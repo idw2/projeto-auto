@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:14397281605501fe888d1756-21442110%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:90957457055084212f02ae3-43830789%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'db308b1edfd773cfd096ea777abda4e55df7772e' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/navbar.tpl',
-      1 => 1425761591,
+      1 => 1426195850,
       2 => 'file',
     ),
     '8350abd1f4a65fbcad0819e9ba6f7681a0a08058' => 
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14397281605501fe888d1756-21442110',
+  'nocache_hash' => '90957457055084212f02ae3-43830789',
   'variables' => 
   array (
     'configuracao' => 0,
@@ -38,10 +38,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5501fe8b12f5a1_12645679',
+  'unifunc' => 'content_550842134e21b5_64357174',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5501fe8b12f5a1_12645679')) {function content_5501fe8b12f5a1_12645679($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_550842134e21b5_64357174')) {function content_550842134e21b5_64357174($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <!-- Define Charset -->
@@ -202,93 +202,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
                         <ul class="nav navbar-nav" style="position: relative;top: 13px;">
     <li class="active"><a href="/pt/">Home</a></li>
-    <li class="buy" >
-        <a href="/pt/">Seminovos</a>
-        <div class="menu-buy">
-            <span class="arrow"></span>
-            <button class="btn btn-sm red">Ver todos</button>
-            <div class="clearfix"></div>
-            <div class="items">
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu02.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent02.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu02.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent02.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu02.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent02.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-            </div>
-            <div class="car">
-                <strong>HONDA CITY 2012</strong>
-                <span>...</span>
-                <img src="/web-files/img/buy/car-menu01.jpg" alt="//">
-            </div>
-        </div>
-    </li>
-    <li ><a href="/pt/">Venda seu carro</a></li>
+    
+   
     <li><a href="/pt/informacoes/financiamento">Financiamento</a></li>
+    <li class="dropdown ">
+        <a href="/pt/empresa" class="dropdown-toggle" data-toggle="dropdown">Categorias<i class="icon-down-open-big"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="/pt/novidades">Novidades</a></li>
+            <li><a href="/pt/zero-km">Zero KM</a></li>
+            <li><a href="/pt/seminovos">Seminovos</a></li>
+            <li><a href="/pt/usados">Usados</a></li>
+        </ul>
+    </li>
     <li class="dropdown ">
         <a href="/pt/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">

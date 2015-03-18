@@ -1,11 +1,11 @@
-<?php /*%%SmartyHeaderCode:1572392894550214b6b03907-89649623%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1444631940550216211ea399-59815271%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'b223aaff33e13b166886383825facb0aaed194d6' => 
+    'a75e0bc8fa2e2db7db75f7313f5dc6a7d3cd3c9d' => 
     array (
-      0 => '/home/dlab34/auto.designlab.com.br/application/views/zero_km.tpl',
-      1 => 1426198305,
+      0 => '/home/dlab34/auto.designlab.com.br/application/views/novidades.tpl',
+      1 => 1426198264,
       2 => 'file',
     ),
     '500fcddbb3138c5958db2eeec67f5e3c58c3871b' => 
@@ -33,29 +33,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1572392894550214b6b03907-89649623',
+  'nocache_hash' => '1444631940550216211ea399-59815271',
   'variables' => 
   array (
-    'controle2' => 0,
+    'controle1' => 0,
     'language' => 0,
-    'zeros' => 0,
+    'novidades' => 0,
     'i' => 0,
-    'zero' => 0,
+    'novidade' => 0,
     'total' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_550214b72b7b92_09732662',
+  'unifunc' => 'content_550216218bc112_49440943',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_550214b72b7b92_09732662')) {function content_550214b72b7b92_09732662($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_550216218bc112_49440943')) {function content_550216218bc112_49440943($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <!-- Define Charset -->
         <meta charset="utf-8">
 
         <!-- Page Title -->
-        <title>Lunixx Auto Sales - Minha Concessionária | Zero KM</title>
+        <title>Lunixx Auto Sales - Minha Concessionária | Novidades</title>
 
         <!-- Responsive Metatag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -201,32 +201,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             <span class="icon-bar"></span>
                         </button>
                         
-                        <a class="navbar-brand" href="/pt/"><img style="width: 85%;" src="http://motors.designlab.com.br/web-files/logomarcas/6FCD3B9535C665B254D0C694E13E4300.png" alt="logo image"></a>
+                        <a class="navbar-brand" href="/en/"><img style="width: 85%;" src="http://motors.designlab.com.br/web-files/logomarcas/6FCD3B9535C665B254D0C694E13E4300.png" alt="logo image"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 3em;">
 
                         <ul class="nav navbar-nav" style="position: relative;top: 13px;">
-    <li class="active"><a href="/pt/">Home</a></li>
+    <li class="active"><a href="/en/">Home</a></li>
     
    
-    <li><a href="/pt/informacoes/financiamento">Financiamento</a></li>
+    <li><a href="/en/informacoes/financiamento">Financiamento</a></li>
     <li class="dropdown ">
-        <a href="/pt/empresa" class="dropdown-toggle" data-toggle="dropdown">Categorias<i class="icon-down-open-big"></i></a>
+        <a href="/en/empresa" class="dropdown-toggle" data-toggle="dropdown">Categorias<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
-            <li><a href="/pt/novidades">Novidades</a></li>
-            <li><a href="/pt/zero-km">Zero KM</a></li>
-            <li><a href="/pt/seminovos">Seminovos</a></li>
-            <li><a href="/pt/usados">Usados</a></li>
+            <li><a href="/en/novidades">Novidades</a></li>
+            <li><a href="/en/zero-km">Zero KM</a></li>
+            <li><a href="/en/seminovos">Seminovos</a></li>
+            <li><a href="/en/usados">Usados</a></li>
         </ul>
     </li>
     <li class="dropdown ">
-        <a href="/pt/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
+        <a href="/en/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
-            <li><a href="/pt/empresa">A Empresa</a></li>
-            <li><a href="/pt/onde-estamos">Onde estamos</a></li>
-            <li><a href="/pt/contato">Contato</a></li>
+            <li><a href="/en/empresa">A Empresa</a></li>
+            <li><a href="/en/onde-estamos">Onde estamos</a></li>
+            <li><a href="/en/contato">Contato</a></li>
         </ul>
     </li>
 
@@ -338,7 +338,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <div class="row pagetitle">
         <div class="col-xs-12">
-            <h2>Zero KM</h2>
+            <h2>Novidades</h2>
         </div>
     </div>
 
@@ -1908,16 +1908,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <br>
 
     <div class="row">
+
         <div class="col-xs-12">
             <div class="col-md-12">
+
                 
                      
-                                             
-                        
-                                             
-                        
-                                             
-                        
+                                                                    
+                                                                    
+                                                                    
+                                                                    
                     
                      
                                                                         <div class="row">
@@ -1925,29 +1925,37 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     <div class="grid">
                                                                         <div class="item-grid">
                                         <div class="ribbon red"><span>Novo</span></div>
-                                        <a class="more" href="/pt/carros/detalhes/toyota-corolla"><i class="icon-plus"></i></a>
+                                        <a class="more" href="/en/carros/detalhes/uno-mille-1"><i class="icon-plus"></i></a>
+                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/E49C3899368D03226E022ABE378595E9/ED04407E510846E02C891A32E1E73236.jpg" alt="Uno Mille" title="Uno Mille">
+                                        <p>Uno Mille <span>$ 159,00</span></p>
+                                    </div>
+                                                            
+                                                                                <div class="item-grid">
+                                        <div class="ribbon red"><span>Novo</span></div>
+                                        <a class="more" href="/en/carros/detalhes/toyota-corolla"><i class="icon-plus"></i></a>
                                         <img src="http://motors.designlab.com.br/web-files/upload/thumbs/DFEFB9C4268CBE9A0903FF75E4E89DEF/55C3D882A17B8E10D81788A3A0069A2A.jpg" alt="Toyota Corolla" title="Toyota Corolla">
                                         <p>Toyota Corolla <span>$ 18.900,00</span></p>
                                     </div>
                                                             
                                                                                 <div class="item-grid">
                                         <div class="ribbon red"><span>Novo</span></div>
-                                        <a class="more" href="/pt/carros/detalhes/bmw-serie-3"><i class="icon-plus"></i></a>
-                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/55A8E4936503DAF7C52C400AEE2E00B0/FF51977E517074A3635FF146F6B5AF4C.jpg" alt="BMW Série 3" title="BMW Série 3">
-                                        <p>BMW Série 3 <span>$ 18.900,00</span></p>
+                                        <a class="more" href="/en/carros/detalhes/new-siena"><i class="icon-plus"></i></a>
+                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/0E1473DC222B4B2F71C660DB122BCEEF/32B5E6208CCEC108BFFEFEC45BDB0F88.jpg" alt="New Siena" title="New Siena">
+                                        <p>New Siena <span>$ 54.000,00</span></p>
                                     </div>
                                                             
                                                                                 <div class="item-grid">
                                         <div class="ribbon red"><span>Novo</span></div>
-                                        <a class="more" href="/pt/carros/detalhes/palio-fire-1"><i class="icon-plus"></i></a>
-                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/497EF3224DF918713BD155773C15F8E0/1306EEB235EEA852926E0D842CD841A5.jpg" alt="Pálio Fire" title="Pálio Fire">
-                                        <p>Pálio Fire <span>$ 235.000,00</span></p>
+                                        <a class="more" href="/en/carros/detalhes/bmw-serie-3"><i class="icon-plus"></i></a>
+                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/55A8E4936503DAF7C52C400AEE2E00B0/FF51977E517074A3635FF146F6B5AF4C.jpg" alt="BMW Série 3" title="BMW Série 3">
+                                        <p>BMW Série 3 <span>$ 18.900,00</span></p>
                                     </div>
                                                                         </div>
                                 </div>
                             </div>
                                                 
-                                                </div>
+                                    
+            </div>
         </div>
     </div>
 

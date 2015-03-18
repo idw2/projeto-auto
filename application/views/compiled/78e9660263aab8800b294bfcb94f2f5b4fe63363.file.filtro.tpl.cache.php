@@ -1,18 +1,51 @@
-
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-18 07:29:27
+         compiled from "/home/dlab34/auto.designlab.com.br/application/views/filtro.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:158564912455098bc7adacd7-44749270%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '78e9660263aab8800b294bfcb94f2f5b4fe63363' => 
+    array (
+      0 => '/home/dlab34/auto.designlab.com.br/application/views/filtro.tpl',
+      1 => 1426686369,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '158564912455098bc7adacd7-44749270',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'language' => 0,
+    'fabricantes' => 0,
+    'fabricante' => 0,
+    'i' => 0,
+    'site' => 0,
+    'configuracao' => 0,
+    'fabricantes_vender' => 0,
+    'fabricante_vender' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_55098bc7c52929_69326426',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55098bc7c52929_69326426')) {function content_55098bc7c52929_69326426($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/home/dlab34/auto.designlab.com.br/libraries/plugins/function.counter.php';
+?>
 <div style="margin: 40px auto;" role="tabpanel">
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">COMPRAR</a></li>
         <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">VENDER</a></li>
-            {*<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">COMPARAR COM 0 KM</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">TABELA FIPE</a></li>*}
+            
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="home">
 
-            <form name="formCrossBuscaCompra" method="post" action="/{$language}/carros/resultados/"> 
+            <form name="formCrossBuscaCompra" method="post" action="/<?php echo $_smarty_tpl->tpl_vars['language']->value;?>
+/carros/resultados/"> 
 
                 <div class="row">
                     <div class="cl col-md-12" style="margin-bottom: 2%;">
@@ -56,11 +89,19 @@
                             <div class="cl col-md-10">
                                 <select  id="marcaComprar" name="fabricante" class="icr-input icr-slt marca_modelo" >
                                     <option value="">&nbsp;</option>
-                                    {counter assign=i start=0 print=false}
-                                    {foreach name=outer item=fabricante from=$fabricantes}
-                                        <option value="{$fabricante['NOME']}" {if $fabricante == $fabricante['NOME']}selected{/if}>{$fabricante['NOME']}</option>
-                                        {counter}
-                                    {/foreach}
+                                    <?php echo smarty_function_counter(array('assign'=>'i','start'=>0,'print'=>false),$_smarty_tpl);?>
+
+                                    <?php  $_smarty_tpl->tpl_vars['fabricante'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['fabricante']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['fabricantes']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['fabricante']->key => $_smarty_tpl->tpl_vars['fabricante']->value) {
+$_smarty_tpl->tpl_vars['fabricante']->_loop = true;
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['fabricante']->value['NOME'];?>
+" <?php if ($_smarty_tpl->tpl_vars['fabricante']->value==$_smarty_tpl->tpl_vars['fabricante']->value['NOME']) {?>selected<?php }?>><?php echo $_smarty_tpl->tpl_vars['fabricante']->value['NOME'];?>
+</option>
+                                        <?php echo smarty_function_counter(array(),$_smarty_tpl);?>
+
+                                    <?php } ?>
                                 </select>
                             </div>
                         </div>
@@ -99,17 +140,25 @@
                             <div class="cl col-md-5">
                                 <select id="anomodeloinicial" name="anoinicial" size="1" class="icr-input icr-slt">
                                     <option value="">de</option>
-                                    {for $i = 2016; $i >= 1929; $i--}
-                                        <option value="{$i}">{$i}</option>
-                                    {/for}
+                                    <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->value = 2016;
+  if ($_smarty_tpl->tpl_vars['i']->value>=1929) { for ($_foo=true;$_smarty_tpl->tpl_vars['i']->value>=1929; $_smarty_tpl->tpl_vars['i']->value--) {
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+</option>
+                                    <?php }} ?>
                                 </select>
                             </div>
                             <div class="cl col-md-5">
                                 <select id="anomodelofinal" name="anofinal" size="1" class="icr-input icr-slt ano_preco">
                                     <option value="">até</option>
-                                    {for $i = 2016; $i >= 1929; $i--}
-                                        <option value="{$i}">{$i}</option>
-                                    {/for}
+                                    <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->value = 2016;
+  if ($_smarty_tpl->tpl_vars['i']->value>=1929) { for ($_foo=true;$_smarty_tpl->tpl_vars['i']->value>=1929; $_smarty_tpl->tpl_vars['i']->value--) {
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+</option>
+                                    <?php }} ?>
                                 </select>
                             </div>
                         </div>
@@ -276,9 +325,12 @@
         <div role="tabpanel" class="tab-pane fade" id="profile">
 
             <form accept-charset="UTF-8" id="venderform" action="">
-                <input type="hidden"id="site" name="site" maxlength="40" value="{$site}"/>
-                <input type="hidden"id="email_recipiente" name="email_recipiente" maxlength="40" value="{$configuracao->EMAIL_FALECONOSCO}"/>
-                <input type="hidden"id="alias" name="alias" maxlength="40" value="{if !is_array($configuracao->ALIAS)}{$configuracao->ALIAS}{/if}"/>
+                <input type="hidden"id="site" name="site" maxlength="40" value="<?php echo $_smarty_tpl->tpl_vars['site']->value;?>
+"/>
+                <input type="hidden"id="email_recipiente" name="email_recipiente" maxlength="40" value="<?php echo $_smarty_tpl->tpl_vars['configuracao']->value->EMAIL_FALECONOSCO;?>
+"/>
+                <input type="hidden"id="alias" name="alias" maxlength="40" value="<?php if (!is_array($_smarty_tpl->tpl_vars['configuracao']->value->ALIAS)) {?><?php echo $_smarty_tpl->tpl_vars['configuracao']->value->ALIAS;?>
+<?php }?>"/>
                 <input type="hidden" name="endo_id" value="38">
                 <div class="row">
                     <div class="cl col-md-12" style="margin-bottom: 2%;">
@@ -295,11 +347,19 @@
                             <div class="cl col-md-9">
                                 <select name="fabricante" id="fabricante" class="icr-input marca_modelo">
                                     <option value="">Fabricante</option>
-                                    {counter assign=i start=0 print=false}
-                                    {foreach name=outer item=fabricante_vender from=$fabricantes_vender}
-                                        <option value="{$fabricante_vender['NOME']}" {if $fabricante_vender == $fabricante_vender['NOME']}selected{/if}>{$fabricante_vender['NOME']}</option>
-                                        {counter}
-                                    {/foreach}
+                                    <?php echo smarty_function_counter(array('assign'=>'i','start'=>0,'print'=>false),$_smarty_tpl);?>
+
+                                    <?php  $_smarty_tpl->tpl_vars['fabricante_vender'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['fabricante_vender']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['fabricantes_vender']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['fabricante_vender']->key => $_smarty_tpl->tpl_vars['fabricante_vender']->value) {
+$_smarty_tpl->tpl_vars['fabricante_vender']->_loop = true;
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['fabricante_vender']->value['NOME'];?>
+" <?php if ($_smarty_tpl->tpl_vars['fabricante_vender']->value==$_smarty_tpl->tpl_vars['fabricante_vender']->value['NOME']) {?>selected<?php }?>><?php echo $_smarty_tpl->tpl_vars['fabricante_vender']->value['NOME'];?>
+</option>
+                                        <?php echo smarty_function_counter(array(),$_smarty_tpl);?>
+
+                                    <?php } ?>
                                 </select>
                             </div>
                         </div>
@@ -338,9 +398,13 @@
                             <div class="cl col-md-9">
                                 <select id="anomodeloinicialVender" name="ano" size="1" class="icr-input icr-slt" >
                                     <option value="">Ano</option>
-                                    {for $i = 2016; $i >= 1929; $i--}
-                                        <option value="{$i}">{$i}</option>
-                                    {/for}
+                                    <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->value = 2016;
+  if ($_smarty_tpl->tpl_vars['i']->value>=1929) { for ($_foo=true;$_smarty_tpl->tpl_vars['i']->value>=1929; $_smarty_tpl->tpl_vars['i']->value--) {
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+</option>
+                                    <?php }} ?>
                                 </select>
                             </div>
                         </div>
@@ -353,9 +417,13 @@
                             <div class="cl col-md-10">
                                 <select id="versaoVender" name="versao" class="icr-input icr-slt marca_modelo">
                                     <option value="">Versão</option>
-                                    {for $i = 2016; $i >= 1929; $i--}
-                                        <option value="{$i}">{$i}</option>
-                                    {/for}
+                                    <?php  $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['i']->value = 2016;
+  if ($_smarty_tpl->tpl_vars['i']->value>=1929) { for ($_foo=true;$_smarty_tpl->tpl_vars['i']->value>=1929; $_smarty_tpl->tpl_vars['i']->value--) {
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+</option>
+                                    <?php }} ?>
                                 </select>
                             </div>
                         </div>
@@ -394,3 +462,4 @@
         </div>
     </div>
 </div>
+<?php }} ?>

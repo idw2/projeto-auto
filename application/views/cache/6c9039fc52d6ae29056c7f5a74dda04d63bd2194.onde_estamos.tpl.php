@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:130352366755019ac65455f5-26939278%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:140636506555020711d6bfd3-92390609%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'db308b1edfd773cfd096ea777abda4e55df7772e' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/navbar.tpl',
-      1 => 1425761591,
+      1 => 1426195850,
       2 => 'file',
     ),
     '8350abd1f4a65fbcad0819e9ba6f7681a0a08058' => 
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '130352366755019ac65455f5-26939278',
+  'nocache_hash' => '140636506555020711d6bfd3-92390609',
   'variables' => 
   array (
     'endereco' => 0,
@@ -35,10 +35,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55019ac6b2c246_28590145',
+  'unifunc' => 'content_55020712a5c902_47972920',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55019ac6b2c246_28590145')) {function content_55019ac6b2c246_28590145($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_55020712a5c902_47972920')) {function content_55020712a5c902_47972920($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <!-- Define Charset -->
@@ -191,107 +191,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             <span class="icon-bar"></span>
                         </button>
                         
-                        <a class="navbar-brand" href="/en/"><img style="width: 85%;" src="http://motors.designlab.com.br/web-files/logomarcas/6FCD3B9535C665B254D0C694E13E4300.png" alt="logo image"></a>
+                        <a class="navbar-brand" href="/pt/"><img style="width: 85%;" src="http://motors.designlab.com.br/web-files/logomarcas/6FCD3B9535C665B254D0C694E13E4300.png" alt="logo image"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 3em;">
 
                         <ul class="nav navbar-nav" style="position: relative;top: 13px;">
-    <li class="active"><a href="/en/">Home</a></li>
-    <li class="buy" >
-        <a href="/en/">Seminovos</a>
-        <div class="menu-buy">
-            <span class="arrow"></span>
-            <button class="btn btn-sm red">Ver todos</button>
-            <div class="clearfix"></div>
-            <div class="items">
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu02.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent02.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu02.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent02.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu02.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent02.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-                <a 
-                    href="#"
-                    data-title="HONDA CITY 2012"
-                    data-desc= "..."
-                    data-img = "/web-files/img/buy/car-menu01.jpg"
-                    >
-                    <img src="/web-files/img/rent/rent01.jpg" alt="//">
-                    <strong>HONDA CITY 2012</strong>
-                    <span>A partir de R$ 52.900</span>
-                </a>
-            </div>
-            <div class="car">
-                <strong>HONDA CITY 2012</strong>
-                <span>...</span>
-                <img src="/web-files/img/buy/car-menu01.jpg" alt="//">
-            </div>
-        </div>
-    </li>
-    <li ><a href="/en/">Venda seu carro</a></li>
-    <li><a href="/en/informacoes/financiamento">Financiamento</a></li>
+    <li class="active"><a href="/pt/">Home</a></li>
+    
+   
+    <li><a href="/pt/informacoes/financiamento">Financiamento</a></li>
     <li class="dropdown ">
-        <a href="/en/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
+        <a href="/pt/empresa" class="dropdown-toggle" data-toggle="dropdown">Categorias<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
-            <li><a href="/en/empresa">A Empresa</a></li>
-            <li><a href="/en/onde-estamos">Onde estamos</a></li>
-            <li><a href="/en/contato">Contato</a></li>
+            <li><a href="/pt/novidades">Novidades</a></li>
+            <li><a href="/pt/zero-km">Zero KM</a></li>
+            <li><a href="/pt/seminovos">Seminovos</a></li>
+            <li><a href="/pt/usados">Usados</a></li>
+        </ul>
+    </li>
+    <li class="dropdown ">
+        <a href="/pt/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="/pt/empresa">A Empresa</a></li>
+            <li><a href="/pt/onde-estamos">Onde estamos</a></li>
+            <li><a href="/pt/contato">Contato</a></li>
         </ul>
     </li>
 

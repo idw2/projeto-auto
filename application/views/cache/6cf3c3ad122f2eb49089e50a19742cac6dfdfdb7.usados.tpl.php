@@ -1,11 +1,11 @@
-<?php /*%%SmartyHeaderCode:1572392894550214b6b03907-89649623%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2033057908550214bdcceda3-67153225%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'b223aaff33e13b166886383825facb0aaed194d6' => 
+    '6cf3c3ad122f2eb49089e50a19742cac6dfdfdb7' => 
     array (
-      0 => '/home/dlab34/auto.designlab.com.br/application/views/zero_km.tpl',
-      1 => 1426198305,
+      0 => '/home/dlab34/auto.designlab.com.br/application/views/usados.tpl',
+      1 => 1426198429,
       2 => 'file',
     ),
     '500fcddbb3138c5958db2eeec67f5e3c58c3871b' => 
@@ -33,29 +33,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1572392894550214b6b03907-89649623',
+  'nocache_hash' => '2033057908550214bdcceda3-67153225',
   'variables' => 
   array (
-    'controle2' => 0,
+    'controle4' => 0,
     'language' => 0,
-    'zeros' => 0,
+    'usados' => 0,
     'i' => 0,
-    'zero' => 0,
+    'usado' => 0,
     'total' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_550214b72b7b92_09732662',
+  'unifunc' => 'content_550214be472309_95759027',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_550214b72b7b92_09732662')) {function content_550214b72b7b92_09732662($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_550214be472309_95759027')) {function content_550214be472309_95759027($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <!-- Define Charset -->
         <meta charset="utf-8">
 
         <!-- Page Title -->
-        <title>Lunixx Auto Sales - Minha Concessionária | Zero KM</title>
+        <title>Lunixx Auto Sales - Minha Concessionária | Usados</title>
 
         <!-- Responsive Metatag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -338,7 +338,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <div class="row pagetitle">
         <div class="col-xs-12">
-            <h2>Zero KM</h2>
+            <h2>Usados</h2>
         </div>
     </div>
 
@@ -1910,44 +1910,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="row">
         <div class="col-xs-12">
             <div class="col-md-12">
-                
-                     
-                                             
-                        
-                                             
-                        
-                                             
-                        
-                    
-                     
-                                                                        <div class="row">
-                                <div class="col-md-12">
-                                    <div class="grid">
-                                                                        <div class="item-grid">
-                                        <div class="ribbon red"><span>Novo</span></div>
-                                        <a class="more" href="/pt/carros/detalhes/toyota-corolla"><i class="icon-plus"></i></a>
-                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/DFEFB9C4268CBE9A0903FF75E4E89DEF/55C3D882A17B8E10D81788A3A0069A2A.jpg" alt="Toyota Corolla" title="Toyota Corolla">
-                                        <p>Toyota Corolla <span>$ 18.900,00</span></p>
-                                    </div>
-                                                            
-                                                                                <div class="item-grid">
-                                        <div class="ribbon red"><span>Novo</span></div>
-                                        <a class="more" href="/pt/carros/detalhes/bmw-serie-3"><i class="icon-plus"></i></a>
-                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/55A8E4936503DAF7C52C400AEE2E00B0/FF51977E517074A3635FF146F6B5AF4C.jpg" alt="BMW Série 3" title="BMW Série 3">
-                                        <p>BMW Série 3 <span>$ 18.900,00</span></p>
-                                    </div>
-                                                            
-                                                                                <div class="item-grid">
-                                        <div class="ribbon red"><span>Novo</span></div>
-                                        <a class="more" href="/pt/carros/detalhes/palio-fire-1"><i class="icon-plus"></i></a>
-                                        <img src="http://motors.designlab.com.br/web-files/upload/thumbs/497EF3224DF918713BD155773C15F8E0/1306EEB235EEA852926E0D842CD841A5.jpg" alt="Pálio Fire" title="Pálio Fire">
-                                        <p>Pálio Fire <span>$ 235.000,00</span></p>
-                                    </div>
-                                                                        </div>
+                                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="grid">
+                                <div class="item-grid">
+                                    <div class="ribbon red"><span>Novo</span></div>
+                                    <a class="more" href="/pt/carros/detalhes/new-siena"><i class="icon-plus"></i></a>
+                                    <img src="http://motors.designlab.com.br/web-files/upload/thumbs/0E1473DC222B4B2F71C660DB122BCEEF/32B5E6208CCEC108BFFEFEC45BDB0F88.jpg" alt="New Siena" title="New Siena">
+                                    <p>New Siena <span>$ 54.000,00</span></p>
                                 </div>
                             </div>
-                                                
-                                                </div>
+                        </div>
+                    </div>
+                 
+            </div>
         </div>
     </div>
 

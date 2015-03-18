@@ -1,11 +1,11 @@
-<?php /*%%SmartyHeaderCode:171863779455098bc73c24d3-57142771%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1311367492550863e3b63d68-70851279%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'b5cdd17684347c68f79dc59e59561a0f295f33ad' => 
+    '7491b292f730153f6658a9f28fcbb0284e13a560' => 
     array (
-      0 => '/home/dlab34/auto.designlab.com.br/application/views/index.tpl',
-      1 => 1426536100,
+      0 => '/home/dlab34/auto.designlab.com.br/application/views/resultados.tpl',
+      1 => 1426527387,
       2 => 'file',
     ),
     '500fcddbb3138c5958db2eeec67f5e3c58c3871b' => 
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '78e9660263aab8800b294bfcb94f2f5b4fe63363' => 
     array (
       0 => '/home/dlab34/auto.designlab.com.br/application/views/filtro.tpl',
-      1 => 1426686369,
+      1 => 1426613213,
       2 => 'file',
     ),
     '8350abd1f4a65fbcad0819e9ba6f7681a0a08058' => 
@@ -33,38 +33,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '171863779455098bc73c24d3-57142771',
+  'nocache_hash' => '1311367492550863e3b63d68-70851279',
   'variables' => 
   array (
     'controle1' => 0,
     'language' => 0,
-    'novidades' => 0,
+    'resultados' => 0,
     'i' => 0,
-    'novidade' => 0,
+    'resultado' => 0,
     'total' => 0,
-    'controle2' => 0,
-    'zeros' => 0,
-    'zero' => 0,
-    'controle3' => 0,
-    'seminovos' => 0,
-    'seminovo' => 0,
-    'controle4' => 0,
-    'usados' => 0,
-    'usado' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55098bc80c4fb5_44512195',
+  'unifunc' => 'content_550863e456c163_54417295',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55098bc80c4fb5_44512195')) {function content_55098bc80c4fb5_44512195($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_550863e456c163_54417295')) {function content_550863e456c163_54417295($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <!-- Define Charset -->
         <meta charset="utf-8">
 
         <!-- Page Title -->
-        <title>Lunixx Auto Sales - Página Inicial</title>
+        <title>Lunixx Auto Sales - Resultado da busca</title>
 
         <!-- Responsive Metatag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -858,24 +849,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
         <div role="tabpanel" class="tab-pane fade" id="profile">
 
+
+            <div class="row">
+                <div class="cl col-md-12" style="margin-bottom: 2%;">
+                    <h3 class="subtitulo">Venda seu carro em nosso Site</h3>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 25px;" class="subtitulo"></h3>
             <form accept-charset="UTF-8" id="venderform" action="">
                 <input type="hidden"id="site" name="site" maxlength="40" value=""/>
                 <input type="hidden"id="email_recipiente" name="email_recipiente" maxlength="40" value="paulolyra@me.com"/>
                 <input type="hidden"id="alias" name="alias" maxlength="40" value="-f"/>
                 <input type="hidden" name="endo_id" value="38">
-                <div class="row">
-                    <div class="cl col-md-12" style="margin-bottom: 2%;">
-                        <h3 class="subtitulo">Venda seu carro em nosso Site</h3>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="cl col-md-6">
-                        <div class="row">
-                            <div class="cl col-md-3">
-                                <label class="icr-label" for="fabricanteComprar">Fabricante</label>
-                            </div>
-                            <div class="cl col-md-9">
+                <table id="formCrossVender" class="form" cellpadding="0" cellspacing="0" border="0">
+                    <tbody><tr>
+                            <td class="label"><label class="icr-label">Fabricante</label></td>
+                            <td class="input">
                                 <select name="fabricante" id="fabricante" class="icr-input marca_modelo">
                                     <option value="">Fabricante</option>
                                     
@@ -2987,16 +2978,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         
                                                                             <option value="ZX Auto" >ZX Auto</option>
                                         
-                                                                    </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cl col-md-6">
-                        <div class="row">
-                            <div class="cl col-md-2">
-                                <label class="icr-label" for="modeloComprar">Modelo</label>
-                            </div>
-                            <div class="cl col-md-10">
+                                    </select>
+                            </td>
+                            <td class="label"><label class="icr-label">Modelo</label></td>
+                            <td class="input">
                                 <select name="modelo" class="icr-input icr-slt marca_modelo">
                                     <option value="">Modelo</option>
                                     <option value="Utilitário comercial">Utilitário comercial</option>
@@ -3011,118 +2996,110 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                     <option value="Hatch médio e esportivo">Hatch médio e esportivo</option>
                                     <option value="Hatch compacto">Hatch compacto</option>
                                 </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label class="icr-label">Ano</label></td>
+                            <td class="input">
+                                <ul class="listahorizontal">
+                                    <li class="esquerda ano_preco">
+                                        <select id="anomodeloinicialVender" name="ano" size="1" class="icr-input icr-slt" >
+                                            <option value="">Ano</option>
+                                                                                            <option value="2016">2016</option>
+                                                                                            <option value="2015">2015</option>
+                                                                                            <option value="2014">2014</option>
+                                                                                            <option value="2013">2013</option>
+                                                                                            <option value="2012">2012</option>
+                                                                                            <option value="2011">2011</option>
+                                                                                            <option value="2010">2010</option>
+                                                                                            <option value="2009">2009</option>
+                                                                                            <option value="2008">2008</option>
+                                                                                            <option value="2007">2007</option>
+                                                                                            <option value="2006">2006</option>
+                                                                                            <option value="2005">2005</option>
+                                                                                            <option value="2004">2004</option>
+                                                                                            <option value="2003">2003</option>
+                                                                                            <option value="2002">2002</option>
+                                                                                            <option value="2001">2001</option>
+                                                                                            <option value="2000">2000</option>
+                                                                                            <option value="1999">1999</option>
+                                                                                            <option value="1998">1998</option>
+                                                                                            <option value="1997">1997</option>
+                                                                                            <option value="1996">1996</option>
+                                                                                            <option value="1995">1995</option>
+                                                                                            <option value="1994">1994</option>
+                                                                                            <option value="1993">1993</option>
+                                                                                            <option value="1992">1992</option>
+                                                                                            <option value="1991">1991</option>
+                                                                                            <option value="1990">1990</option>
+                                                                                            <option value="1989">1989</option>
+                                                                                            <option value="1988">1988</option>
+                                                                                            <option value="1987">1987</option>
+                                                                                            <option value="1986">1986</option>
+                                                                                            <option value="1985">1985</option>
+                                                                                            <option value="1984">1984</option>
+                                                                                            <option value="1983">1983</option>
+                                                                                            <option value="1982">1982</option>
+                                                                                            <option value="1981">1981</option>
+                                                                                            <option value="1980">1980</option>
+                                                                                            <option value="1979">1979</option>
+                                                                                            <option value="1978">1978</option>
+                                                                                            <option value="1977">1977</option>
+                                                                                            <option value="1976">1976</option>
+                                                                                            <option value="1975">1975</option>
+                                                                                            <option value="1974">1974</option>
+                                                                                            <option value="1973">1973</option>
+                                                                                            <option value="1972">1972</option>
+                                                                                            <option value="1971">1971</option>
+                                                                                            <option value="1970">1970</option>
+                                                                                            <option value="1969">1969</option>
+                                                                                            <option value="1968">1968</option>
+                                                                                            <option value="1967">1967</option>
+                                                                                            <option value="1966">1966</option>
+                                                                                            <option value="1965">1965</option>
+                                                                                            <option value="1964">1964</option>
+                                                                                            <option value="1963">1963</option>
+                                                                                            <option value="1962">1962</option>
+                                                                                            <option value="1961">1961</option>
+                                                                                            <option value="1960">1960</option>
+                                                                                            <option value="1959">1959</option>
+                                                                                            <option value="1958">1958</option>
+                                                                                            <option value="1957">1957</option>
+                                                                                            <option value="1956">1956</option>
+                                                                                            <option value="1955">1955</option>
+                                                                                            <option value="1954">1954</option>
+                                                                                            <option value="1953">1953</option>
+                                                                                            <option value="1952">1952</option>
+                                                                                            <option value="1951">1951</option>
+                                                                                            <option value="1950">1950</option>
+                                                                                            <option value="1949">1949</option>
+                                                                                            <option value="1948">1948</option>
+                                                                                            <option value="1947">1947</option>
+                                                                                            <option value="1946">1946</option>
+                                                                                            <option value="1945">1945</option>
+                                                                                            <option value="1944">1944</option>
+                                                                                            <option value="1943">1943</option>
+                                                                                            <option value="1942">1942</option>
+                                                                                            <option value="1941">1941</option>
+                                                                                            <option value="1940">1940</option>
+                                                                                            <option value="1939">1939</option>
+                                                                                            <option value="1938">1938</option>
+                                                                                            <option value="1937">1937</option>
+                                                                                            <option value="1936">1936</option>
+                                                                                            <option value="1935">1935</option>
+                                                                                            <option value="1934">1934</option>
+                                                                                            <option value="1933">1933</option>
+                                                                                            <option value="1932">1932</option>
+                                                                                            <option value="1931">1931</option>
+                                                                                            <option value="1930">1930</option>
+                                                                                            <option value="1929">1929</option>
+                                                                                    </select>
+                                    </li>
 
-                <div class="row">
-                    <div class="cl col-md-6">
-                        <div class="row">
-                            <div class="cl col-md-3">
-                                <label class="icr-label" for="fabricanteComprar">Ano</label>
-                            </div>
-                            <div class="cl col-md-9">
-                                <select id="anomodeloinicialVender" name="ano" size="1" class="icr-input icr-slt" >
-                                    <option value="">Ano</option>
-                                                                            <option value="2016">2016</option>
-                                                                            <option value="2015">2015</option>
-                                                                            <option value="2014">2014</option>
-                                                                            <option value="2013">2013</option>
-                                                                            <option value="2012">2012</option>
-                                                                            <option value="2011">2011</option>
-                                                                            <option value="2010">2010</option>
-                                                                            <option value="2009">2009</option>
-                                                                            <option value="2008">2008</option>
-                                                                            <option value="2007">2007</option>
-                                                                            <option value="2006">2006</option>
-                                                                            <option value="2005">2005</option>
-                                                                            <option value="2004">2004</option>
-                                                                            <option value="2003">2003</option>
-                                                                            <option value="2002">2002</option>
-                                                                            <option value="2001">2001</option>
-                                                                            <option value="2000">2000</option>
-                                                                            <option value="1999">1999</option>
-                                                                            <option value="1998">1998</option>
-                                                                            <option value="1997">1997</option>
-                                                                            <option value="1996">1996</option>
-                                                                            <option value="1995">1995</option>
-                                                                            <option value="1994">1994</option>
-                                                                            <option value="1993">1993</option>
-                                                                            <option value="1992">1992</option>
-                                                                            <option value="1991">1991</option>
-                                                                            <option value="1990">1990</option>
-                                                                            <option value="1989">1989</option>
-                                                                            <option value="1988">1988</option>
-                                                                            <option value="1987">1987</option>
-                                                                            <option value="1986">1986</option>
-                                                                            <option value="1985">1985</option>
-                                                                            <option value="1984">1984</option>
-                                                                            <option value="1983">1983</option>
-                                                                            <option value="1982">1982</option>
-                                                                            <option value="1981">1981</option>
-                                                                            <option value="1980">1980</option>
-                                                                            <option value="1979">1979</option>
-                                                                            <option value="1978">1978</option>
-                                                                            <option value="1977">1977</option>
-                                                                            <option value="1976">1976</option>
-                                                                            <option value="1975">1975</option>
-                                                                            <option value="1974">1974</option>
-                                                                            <option value="1973">1973</option>
-                                                                            <option value="1972">1972</option>
-                                                                            <option value="1971">1971</option>
-                                                                            <option value="1970">1970</option>
-                                                                            <option value="1969">1969</option>
-                                                                            <option value="1968">1968</option>
-                                                                            <option value="1967">1967</option>
-                                                                            <option value="1966">1966</option>
-                                                                            <option value="1965">1965</option>
-                                                                            <option value="1964">1964</option>
-                                                                            <option value="1963">1963</option>
-                                                                            <option value="1962">1962</option>
-                                                                            <option value="1961">1961</option>
-                                                                            <option value="1960">1960</option>
-                                                                            <option value="1959">1959</option>
-                                                                            <option value="1958">1958</option>
-                                                                            <option value="1957">1957</option>
-                                                                            <option value="1956">1956</option>
-                                                                            <option value="1955">1955</option>
-                                                                            <option value="1954">1954</option>
-                                                                            <option value="1953">1953</option>
-                                                                            <option value="1952">1952</option>
-                                                                            <option value="1951">1951</option>
-                                                                            <option value="1950">1950</option>
-                                                                            <option value="1949">1949</option>
-                                                                            <option value="1948">1948</option>
-                                                                            <option value="1947">1947</option>
-                                                                            <option value="1946">1946</option>
-                                                                            <option value="1945">1945</option>
-                                                                            <option value="1944">1944</option>
-                                                                            <option value="1943">1943</option>
-                                                                            <option value="1942">1942</option>
-                                                                            <option value="1941">1941</option>
-                                                                            <option value="1940">1940</option>
-                                                                            <option value="1939">1939</option>
-                                                                            <option value="1938">1938</option>
-                                                                            <option value="1937">1937</option>
-                                                                            <option value="1936">1936</option>
-                                                                            <option value="1935">1935</option>
-                                                                            <option value="1934">1934</option>
-                                                                            <option value="1933">1933</option>
-                                                                            <option value="1932">1932</option>
-                                                                            <option value="1931">1931</option>
-                                                                            <option value="1930">1930</option>
-                                                                            <option value="1929">1929</option>
-                                                                    </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cl col-md-6">
-                        <div class="row">
-                            <div class="cl col-md-2">
-                                <label class="icr-label" for="modeloComprar">Versão</label>
-                            </div>
-                            <div class="cl col-md-10">
+                                </ul>
+                            </td>
+                            <td class="label"><label class="icr-label">Versao</label></td>
+                            <td class="input">
                                 <select id="versaoVender" name="versao" class="icr-input icr-slt marca_modelo">
                                     <option value="">Versão</option>
                                                                             <option value="2016">2016</option>
@@ -3214,42 +3191,34 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                                                             <option value="1930">1930</option>
                                                                             <option value="1929">1929</option>
                                                                     </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label class="icr-label">Email</label></td>
+                            <td colspan="3">
+                                <input style="width:54%;" type="text" id="email" name="email" data-nav="email" class="icr-input" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <div class="direita">
+                                    <button type="button" id="btn-send-vender" class="icr-btn icr-btn-redondo icr-btn-xl icr-btn-laranja">
+                                        <span class="ui-button-text">vender</span>
+                                    </button>
 
-                <div class="row">
-                    <div class="cl col-md-6">
-                        <div class="row">
-                            <div class="cl col-md-3">
-                                <label class="icr-label" for="fabricanteComprar">E-mail</label>
-                            </div>
-                            <div class="cl col-md-9">
-                                <input type="text" id="email" name="email" data-nav="email" class="icr-input" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cl col-md-6">
-                        <div class="row">
-                            <div class="cl col-md-2">
-
-                            </div>
-                            <div class="cl col-md-5">
-
-                            </div>
-                            <div class="cl col-md-5">
-                                <button type="button" id="btn-send-vender" class="icr-btn icr-btn-redondo icr-btn-xl icr-btn-laranja">
-                                    <span class="ui-button-text">VENDER</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                                </div>
+                                <div id="msg-vender"></div>
+                            </td>
+                        </tr>
+                    </tbody></table>
             </form>
+
+
         </div>
+
+        
     </div>
+
 </div>
 </div>
 </section>
@@ -3262,141 +3231,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         
              
-                                            
-                                            
-                                            
-                                            
             
              
-                                                <div class="row">
-                        <div class="col-md-12">
-                            <h3 style="margin-top: 0;">Novidades</h3>
-                            <div class="grid">
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/uno-mille-1"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/E49C3899368D03226E022ABE378595E9/ED04407E510846E02C891A32E1E73236.jpg" alt="Uno Mille" title="Uno Mille">
-                                <p>Uno Mille <span>$ 159,00</span></p>
-                            </div>
-                                            
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/toyota-corolla-sedan"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/DFEFB9C4268CBE9A0903FF75E4E89DEF/55C3D882A17B8E10D81788A3A0069A2A.jpg" alt="Toyota Corolla Sedan" title="Toyota Corolla Sedan">
-                                <p>Toyota Corolla Sedan <span>$ 18.900,00</span></p>
-                            </div>
-                                            
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/new-siena"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/0E1473DC222B4B2F71C660DB122BCEEF/32B5E6208CCEC108BFFEFEC45BDB0F88.jpg" alt="New Siena" title="New Siena">
-                                <p>New Siena <span>$ 54.000,00</span></p>
-                            </div>
-                                            
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/bmw-serie-3"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/55A8E4936503DAF7C52C400AEE2E00B0/FF51977E517074A3635FF146F6B5AF4C.jpg" alt="BMW Série 3" title="BMW Série 3">
-                                <p>BMW Série 3 <span>$ 18.900,00</span></p>
-                            </div>
-                                                        </div>
                         </div>
-                    </div>
-                                
-                    
-
-
-
-        
-             
-                             
-                
-                             
-                
-            
-             
-                                                <div class="row">
-                        <div class="col-md-12">
-                            <h3 style="margin-top: 20px;">Zero KM</h3>
-                            <div class="grid">
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/toyota-corolla-sedan"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/DFEFB9C4268CBE9A0903FF75E4E89DEF/55C3D882A17B8E10D81788A3A0069A2A.jpg" alt="Toyota Corolla Sedan" title="Toyota Corolla Sedan">
-                                <p>Toyota Corolla Sedan <span>$ 18.900,00</span></p>
-                            </div>
-                                            
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/bmw-serie-3"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/55A8E4936503DAF7C52C400AEE2E00B0/FF51977E517074A3635FF146F6B5AF4C.jpg" alt="BMW Série 3" title="BMW Série 3">
-                                <p>BMW Série 3 <span>$ 18.900,00</span></p>
-                            </div>
-                                                        </div>
-                        </div>
-                    </div>
-                                
-                     
-
-
-
-                    <div class="row">
-                <div class="col-md-12">
-                    <h3 style="margin-top: 20px;">Seminovos</h3>
-                    <div class="grid">
-                        <div class="item-grid">
-                            <div class="ribbon red"><span>Novo</span></div>
-                            <a class="more" href="/pt/carros/detalhes/uno-mille-1"><i class="icon-plus"></i></a>
-                            <img src="http://motors.designlab.com.br/web-files/upload/thumbs/E49C3899368D03226E022ABE378595E9/ED04407E510846E02C891A32E1E73236.jpg" alt="Uno Mille" title="Uno Mille">
-                            <p>Uno Mille <span>$ 159,00</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         
-
-
-
-        
-             
-                             
-                
-                             
-                
-            
-             
-                                                <div class="row">
-                        <div class="col-md-12">
-                            <h3 style="margin-top: 20px;">Usados</h3>
-                            <div class="grid">
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/new-siena"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/0E1473DC222B4B2F71C660DB122BCEEF/32B5E6208CCEC108BFFEFEC45BDB0F88.jpg" alt="New Siena" title="New Siena">
-                                <p>New Siena <span>$ 54.000,00</span></p>
-                            </div>
-                                            
-                                                        <div class="item-grid">
-                                <div class="ribbon red"><span>Novo</span></div>
-                                <a class="more" href="/pt/carros/detalhes/palio-fire-1"><i class="icon-plus"></i></a>
-                                <img src="http://motors.designlab.com.br/web-files/upload/thumbs/497EF3224DF918713BD155773C15F8E0/1306EEB235EEA852926E0D842CD841A5.jpg" alt="Pálio Fire" title="Pálio Fire">
-                                <p>Pálio Fire <span>$ 235.000,00</span></p>
-                            </div>
-                                                        </div>
-                        </div>
-                    </div>
-                                
-                     
-
-
-        <!-- testimonials -->
-        
-        <!-- end testimonials -->
-
-        <!-- sevices -->
-        
-        <!-- end sevices -->
-    </div>
 
 </section>
 
