@@ -87,7 +87,6 @@
         </div>
     </li>
     <li ><a href="/{$language}/">Venda seu carro</a></li>*}
-    <li><a href="/{$language}/informacoes/financiamento">Financiamento</a></li>
     <li class="dropdown ">
         <a href="/{$language}/empresa" class="dropdown-toggle" data-toggle="dropdown">Categorias<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
@@ -97,13 +96,15 @@
             <li><a href="/{$language}/usados">Usados</a></li>
         </ul>
     </li>
-    <li class="dropdown ">
+    {*<li class="dropdown ">
         <a href="/{$language}/empresa" class="dropdown-toggle" data-toggle="dropdown">Institucional<i class="icon-down-open-big"></i></a>
         <ul class="dropdown-menu">
             <li><a href="/{$language}/empresa">A Empresa</a></li>
             <li><a href="/{$language}/onde-estamos">Onde estamos</a></li>
             <li><a href="/{$language}/contato">Contato</a></li>
         </ul>
-    </li>
-{*    <li><a href="#">Notícias</a></li>*}
+    </li>*}
+    <li><a href="/{$language}/empresa">A Empresa</a></li>
+    <li><a href="/{$language}/informacoes/financiamento">Financiamento</a></li>
+    <li><a href="/{$language}/contato">Contato</a></li>
 </ul>

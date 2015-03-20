@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:36752429654ff6e15a76ed8-33331447%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16930413755508410de2b317-60319310%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '36752429654ff6e15a76ed8-33331447',
+  'nocache_hash' => '16930413755508410de2b317-60319310',
   'variables' => 
   array (
     'view_nome' => 0,
@@ -19,10 +19,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_54ff6e15b45373_96569902',
+  'unifunc' => 'content_5508410de72809_77998642',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ff6e15b45373_96569902')) {function content_54ff6e15b45373_96569902($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_5508410de72809_77998642')) {function content_5508410de72809_77998642($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -30,10 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </head>
     <body>
         <pre style="font-size: 20px;">
-            <p><b>Nome:</b> thiago lima</p>
+            <p><b>Nome:</b> </p>
             <p><b>Email:</b> biss.thiago@gmail.com</p>
             <p><b>Assunto:</b> </p>
-            <p><b>Mensagem:</b><br/> rr fwef we we wefwefwef wefwe fwe we we fwe</p>
+            <p><b>Mensagem:</b><br/></p>
         </pre>
     </body>
 </html><?php }} ?>

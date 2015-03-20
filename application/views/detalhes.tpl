@@ -19,7 +19,7 @@
 </section>
 
 <section class="container">
-    <div class="row">
+    <div class="row" style="margin-bottom: 5% !important;">
         <div class="col-md-8">
             {*<div class="veiculo-slider">
             <ul class="slides">
@@ -95,12 +95,21 @@
                     </form>
                     <hr>
 
-                    <p style='line-height: 2.2em;'>{$endereco->LOGRADOURO}, {$endereco->NUMERO}<br>
-                        {if $endereco->COMPLEMENTO != "" && !is_array($endereco->COMPLEMENTO)}{$endereco->COMPLEMENTO}<br>{/if}    
-                        {$endereco->BAIRRO}<br />
-                        {$endereco->CIDADE}/{$endereco->UF}<br />
-                        CEP: {$endereco->CEP}</p>
-                    <p><a href="" style="font-size: 24px;letter-spacing: 0.04rem;font-weight: bold">{$configuracao->TELEFONE}</a><p>
+                    <p style='line-height: 2.2em;'>
+
+                    <div class="map-frame" style="margin-bottom: 10px;">
+                        <iframe src="https://maps.google.com/maps?q={$onde_estamos}&output=embed" width="100" height="175" frameborder="0" style="border:0;width: 100%;"></iframe>
+                    </div>
+                    {*{$endereco->LOGRADOURO}, {$endereco->NUMERO}<br>
+                    {if $endereco->COMPLEMENTO != "" && !is_array($endereco->COMPLEMENTO)}{$endereco->COMPLEMENTO}<br>{/if}    
+                    {$endereco->BAIRRO}<br />
+                    {$endereco->CIDADE}/{$endereco->UF}<br />
+                    CEP: {$endereco->CEP}*}
+                    </p>
+                    <p style="text-align: center;">
+                        <span style='  font-size: 27px;'>ph: </span><a href="" style="font-size: 27px;letter-spacing: 0.04rem;font-weight: bold; color: #4e4e4e;text-align: center !important;">{$configuracao->TELEFONE}</a>
+                    <p>
+
                 </div>
             </div>
         </div>
@@ -143,7 +152,7 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row" style="margin-top: 3.5%;">
 
             <div class="col-lg-12">
                 <h4 style="margin-top: 30px;">Observações: </h3>

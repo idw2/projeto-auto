@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:144155794654ff6e14573c18-70478502%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9792277035508410db8f861-39028587%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,17 +9,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '144155794654ff6e14573c18-70478502',
+  'nocache_hash' => '9792277035508410db8f861-39028587',
   'variables' => 
   array (
     'view_nome' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_54ff6e1498f018_48115893',
+  'unifunc' => 'content_5508410dc70d68_71025180',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ff6e1498f018_48115893')) {function content_54ff6e1498f018_48115893($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_5508410dc70d68_71025180')) {function content_5508410dc70d68_71025180($_smarty_tpl) {?><!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </head>
     <body>
         <pre style="font-size: 20px;">
-            <p>Obrigado thiago lima pelo contato, em breve estaremos respondendo a sua mensagem!</p>
+            <p>Obrigado  pelo contato, em breve estaremos respondendo a sua mensagem!</p>
             <p></p>
             <p></p>
             <p><b>* Não responder esta mensagem!</b></p>

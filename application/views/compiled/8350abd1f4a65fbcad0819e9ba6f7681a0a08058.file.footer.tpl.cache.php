@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-03-12 14:01:17
+<?php /* Smarty version Smarty-3.1.19, created on 2015-03-18 07:29:27
          compiled from "/home/dlab34/auto.designlab.com.br/application/views/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4006896605501fe9da616b3-24953272%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:37828761155098bc7ccb791-88623232%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4006896605501fe9da616b3-24953272',
+  'nocache_hash' => '37828761155098bc7ccb791-88623232',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5501fe9dbb6369_69128217',
+  'unifunc' => 'content_55098bc7e1ec44_91329324',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5501fe9dbb6369_69128217')) {function content_5501fe9dbb6369_69128217($_smarty_tpl) {?><footer>
+<?php if ($_valid && !is_callable('content_55098bc7e1ec44_91329324')) {function content_55098bc7e1ec44_91329324($_smarty_tpl) {?><footer>
 
             <!-- begin middle Footer -->
             <div class="middlefoot">
